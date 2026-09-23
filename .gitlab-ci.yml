@@ -1,0 +1,16 @@
+### `.gitlab-ci.yml`
+
+stages:
+  - build
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+maven-build:
+  stage: build
+  tags:
+    - local
+  script:
+    - java -version
+    - mvn -version
+    - mvn clean install
