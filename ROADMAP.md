@@ -288,6 +288,16 @@ A module is considered complete when:
 
 ---
 
+## Want to Contribute?
+
+Contributions are welcome!
+
+Feel free to pick any unchecked example, open an issue to discuss it, or submit a pull request.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+---
+
 ## V2 Completion
 
 Spring by Example V2 will be considered complete when all twelve modules have been implemented, documented, tested, and integrated into the project roadmap.
