@@ -14,7 +14,8 @@
     <description>Small but extensive examples covering the Spring ecosystem.</description>
 
     <modules>
-
+        <!--    01 Spring Security      -->
+        <module>01-spring-security/basic-spring-security</module>
     </modules>
 
     <properties>

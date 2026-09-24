@@ -46,20 +46,20 @@ Each example should be:
 
 ## Modules
 
-| Module | Topic | Status          |
-|---|---|-----------------|
-| 01 | Spring Security | 🚧  In Progress |
-| 02 | Spring Data | ⬜  Planned      |
-| 03 | Reactive Spring | ⬜  Planned      |
-| 04 | Spring Modulith | ⬜  Planned      |
-| 05 | Spring Testing | ⬜  Planned      |
-| 06 | Capstone Application | ⬜  Planned      |
-| 07 | Spring Batch | ⬜  Planned      |
-| 08 | Spring Integration | ⬜  Planned      |
-| 09 | Spring Cloud | ⬜  Planned      |
-| 10 | Spring AI | ⬜  Planned      |
-| 11 | GraalVM Native | ⬜  Planned      |
-| 12 | Kotlin | ⬜  Planned      |
+| Module | Topic                | Status          |
+|--------|----------------------|-----------------|
+| 01     | Spring Security      | 🚧  In Progress |
+| 02     | Spring Data          | ⬜  Planned      |
+| 03     | Reactive Spring      | ⬜  Planned      |
+| 04     | Spring Modulith      | ⬜  Planned      |
+| 05     | Spring Testing       | ⬜  Planned      |
+| 06     | Capstone Application | ⬜  Planned      |
+| 07     | Spring Batch         | ⬜  Planned      |
+| 08     | Spring Integration   | ⬜  Planned      |
+| 09     | Spring Cloud         | ⬜  Planned      |
+| 10     | Spring AI            | ⬜  Planned      |
+| 11     | GraalVM Native       | ⬜  Planned      |
+| 12     | Kotlin               | ⬜  Planned      |
 
 ---
 
@@ -99,9 +99,9 @@ Explore application security with Spring Security.
 
 - SecurityFilterChain
 - Authentication
-- Authorization
 - UserDetailsService
 - Password encoding
+- Authorization
 - SecurityContext
 - Method security
 - CSRF
@@ -316,7 +316,7 @@ The project currently targets:
 - Maven
 - JUnit Jupiter
 
-Individual modules may introduce additional dependencies.
+> Individual modules may introduce additional dependencies.
 
 ---
 
@@ -333,7 +333,7 @@ Choose any module and run it independently using Maven.
 For example:
 
 ```bash
-cd spring-security/*
+cd 01-spring-security/security-filter-chain
 mvn clean test
 ```
 
@@ -374,13 +374,17 @@ The project's progress is tracked in [ROADMAP.md](ROADMAP.md), where you can see
 
 ## License
 
-See [LICENSE](LICENSE).
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions are welcome!
+
+If you'd like to improve an example, fix an issue, or add a new learning module, please read the [CONTRIBUTING.md](CONTRIBUTING.md) guide before opening a pull request.
 
 ---
 
@@ -391,7 +395,5 @@ Thank you to everyone who has contributed! Here are the people who have helped s
 <a href="https://github.com/IamMujuziMoses/spring-by-example-v2/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=IamMujuziMoses/spring-by-example-v2" />
 </a>
-
----
 
 #### [Back To Top ⬆️](#spring-by-example-v2)

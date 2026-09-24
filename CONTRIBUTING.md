@@ -17,7 +17,7 @@ git clone https://github.com/<your-username>/spring-by-example-v2.git
 Navigate to an example
 
 ```bash
-cd spring-security/*
+cd 01-spring-security/security-filter-chain
 ```
 
 Run
