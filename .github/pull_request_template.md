@@ -6,7 +6,7 @@
 
 <!-- Example path -->
 
-fundamentals/hello-bean
+- spring-security/security-filter-chain
 
 ## Changes
 
@@ -20,3 +20,6 @@ How was this tested?
 
 ```bash
 mvn clean install
+```
+
+Closes 

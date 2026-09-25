@@ -42,12 +42,12 @@ Examples should be focused enough to understand individually while collectively 
 
 Planned topics:
 
-- 🚧 SecurityFilterChain
+- [x] `SecurityFilterChain`
 - 🚧 Authentication
-- ⬜ Authorization
-- ⬜ UserDetailsService
+- 🚧 `UserDetailsService`
 - ⬜ Password encoding
-- ⬜ SecurityContext
+- ⬜ Authorization
+- ⬜ `SecurityContext`
 - ⬜ Method security
 - ⬜ CSRF
 - ⬜ Session management
@@ -64,7 +64,7 @@ Planned topics:
 Planned topics:
 
 - ⬜ Spring Data repositories
-- ⬜ CrudRepository
+- ⬜ `CrudRepository`
 - ⬜ Query methods
 - ⬜ `@Query`
 - ⬜ Entity mapping
