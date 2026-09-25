@@ -44,9 +44,9 @@ Planned topics:
 
 - [x] `SecurityFilterChain`
 - [x] Authentication
-- 🚧 `UserDetailsService`
+- [x] `UserDetailsService`
 - 🚧 Password encoding
-- ⬜ Authorization
+- 🚧 Authorization
 - ⬜ `SecurityContext`
 - ⬜ Method security
 - ⬜ CSRF
