@@ -16,6 +16,7 @@
     <modules>
         <!--    01 Spring Security      -->
         <module>01-spring-security/basic-spring-security</module>
+        <module>01-spring-security/security-filter-chain</module>
     </modules>
 
     <properties>

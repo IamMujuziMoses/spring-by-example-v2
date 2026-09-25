@@ -97,12 +97,12 @@ Kotlin
 
 Explore application security with Spring Security.
 
-- SecurityFilterChain
+- `SecurityFilterChain`
 - Authentication
-- UserDetailsService
+- `UserDetailsService`
 - Password encoding
 - Authorization
-- SecurityContext
+- `SecurityContext`
 - Method security
 - CSRF
 - Session management
@@ -117,7 +117,7 @@ Explore application security with Spring Security.
 Explore database access and repository abstractions.
 
 - Spring Data repositories
-- CrudRepository
+- `CrudRepository`
 - Query methods
 - `@Query`
 - Entity mapping
