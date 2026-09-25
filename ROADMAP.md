@@ -43,9 +43,9 @@ Examples should be focused enough to understand individually while collectively 
 Planned topics:
 
 - [x] `SecurityFilterChain`
-- 🚧 Authentication
+- [x] Authentication
 - 🚧 `UserDetailsService`
-- ⬜ Password encoding
+- 🚧 Password encoding
 - ⬜ Authorization
 - ⬜ `SecurityContext`
 - ⬜ Method security
