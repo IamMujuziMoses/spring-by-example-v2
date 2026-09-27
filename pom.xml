@@ -19,6 +19,7 @@
         <module>01-spring-security/security-filter-chain</module>
         <module>01-spring-security/authentication</module>
         <module>01-spring-security/user-details-service</module>
+        <module>01-spring-security/password-encoding</module>
 
     </modules>
 
