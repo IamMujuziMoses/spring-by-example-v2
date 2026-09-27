@@ -46,9 +46,9 @@ Planned topics:
 - [x] Authentication
 - [x] `UserDetailsService`
 - [x] Password encoding
-- 🚧 Authorization
+- [x] Authorization
 - 🚧 `SecurityContext`
-- ⬜ Method security
+- 🚧 Method security
 - ⬜ CSRF
 - ⬜ Session management
 - ⬜ OAuth2
