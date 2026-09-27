@@ -1,5 +1,6 @@
 package com.springbyexample.v2.securitycontext.controller;
 
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import org.springframework.security.core.Authentication;
@@ -31,21 +32,13 @@ public class SecurityContextController {
         return "Authenticated as: " + authentication.getName();
     }
 
-//    @GetMapping("/details")
-//    public String details() {
-//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//
-//        assert authentication != null;
-//        return "Name: " + authentication.getName() + ", Authorities: " + authentication.getAuthorities();
-//    }
-
     @GetMapping("/details")
     public String details() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         assert authentication != null;
         String authorities = authentication.getAuthorities().stream().map(GrantedAuthority::getAuthority)
-                .sorted().collect(Collectors.joining(", "));
+                .filter(Objects::nonNull).sorted().collect(Collectors.joining(", "));
 
         return "Name: " + authentication.getName() + ", Authorities: [" + authorities + "]";
     }
