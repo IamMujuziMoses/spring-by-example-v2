@@ -1,0 +1,112 @@
+name: Example Validation Checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-readmes:
+    name: Validate Example READMEs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Check example READMEs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          failed=0
+
+          while IFS= read -r -d '' java_file; do
+            example_dir=""
+
+            # Find the example directory containing this Java file.
+            current_dir="$(dirname "$java_file")"
+
+            while [[ "$current_dir" != "." && "$current_dir" != "/" ]]; do
+              if [[ -d "$current_dir/src" ]]; then
+                example_dir="$current_dir"
+                break
+              fi
+
+              current_dir="$(dirname "$current_dir")"
+            done
+
+            if [[ -z "$example_dir" ]]; then
+              continue
+            fi
+
+            readme="$example_dir/README.md"
+
+            if [[ ! -f "$readme" ]]; then
+              echo "::error file=$readme::Missing README.md"
+              echo "Missing README: $example_dir"
+              failed=1
+              continue
+            fi
+
+            if [[ -z "$(tr -d '[:space:]' < "$readme")" ]]; then
+              echo "::error file=$readme::README.md is empty"
+              echo "Empty README: $readme"
+              failed=1
+            fi
+
+          done < <(
+            find . \
+              -type f \
+              -name "*.java" \
+              -not -path "./.git/*" \
+              -not -path "*/target/*" \
+              -print0
+          )
+
+          if [[ "$failed" -ne 0 ]]; then
+            echo ""
+            echo "README validation failed."
+            exit 1
+          fi
+
+          echo "All examples have non-empty README.md files."
+
+  validate-java-authors:
+    name: Validate Java @author Javadocs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Check Java @author tags
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          failed=0
+
+          while IFS= read -r -d '' java_file; do
+            if ! grep -Eq '^[[:space:]]*\*?[[:space:]]*@author([[:space:]]|$)' "$java_file"; then
+              echo "::error file=$java_file::Missing @author Javadoc tag"
+              echo "Missing @author: $java_file"
+              failed=1
+            fi
+          done < <(
+            find . \
+              -type f \
+              -name "*.java" \
+              -not -path "./.git/*" \
+              -not -path "*/target/*" \
+              -print0
+          )
+
+          if [[ "$failed" -ne 0 ]]; then
+            echo ""
+            echo "Java @author validation failed."
+            exit 1
+          fi
+
+          echo "All Java files contain an @author Javadoc tag."
