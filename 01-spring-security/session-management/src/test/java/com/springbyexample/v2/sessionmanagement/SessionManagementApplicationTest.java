@@ -16,6 +16,9 @@ import org.springframework.test.web.servlet.MvcResult;
 
 import jakarta.servlet.http.HttpSession;
 
+/**
+ * @author Mujuzi Moses
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 public class SessionManagementApplicationTest {
