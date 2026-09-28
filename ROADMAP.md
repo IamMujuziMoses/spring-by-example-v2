@@ -48,9 +48,9 @@ Planned topics:
 - [x] Password encoding
 - [x] Authorization
 - [x] `SecurityContext`
-- 🚧 Method security
+- [x] Method security
 - 🚧 CSRF
-- ⬜ Session management
+- 🚧 Session management
 - ⬜ OAuth2
 - ⬜ JWT
 - ⬜ Security testing
