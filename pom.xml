@@ -22,6 +22,7 @@
         <module>01-spring-security/password-encoding</module>
         <module>01-spring-security/authorization</module>
         <module>01-spring-security/security-context</module>
+        <module>01-spring-security/method-security</module>
 
     </modules>
 
