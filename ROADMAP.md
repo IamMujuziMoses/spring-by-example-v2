@@ -52,7 +52,7 @@ Planned topics:
 - [x] CSRF
 - [x] Session management
 - [x] OAuth2
-- 🚧 JWT
+- [x] JWT
 - 🚧 Security testing
 
 ---
@@ -63,7 +63,7 @@ Planned topics:
 
 Planned topics:
 
-- ⬜ Spring Data repositories
+- 🚧 Spring Data repositories
 - ⬜ `CrudRepository`
 - ⬜ Query methods
 - ⬜ `@Query`
