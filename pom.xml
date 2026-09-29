@@ -27,6 +27,7 @@
         <module>01-spring-security/session-management</module>
         <module>01-spring-security/oauth2</module>
         <module>01-spring-security/jwt</module>
+        <module>01-spring-security/security-testing</module>
 
     </modules>
 

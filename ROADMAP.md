@@ -53,7 +53,7 @@ Planned topics:
 - [x] Session management
 - [x] OAuth2
 - [x] JWT
-- 🚧 Security testing
+- [x] Security testing
 
 ---
 
@@ -64,7 +64,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Spring Data repositories
-- ⬜ `CrudRepository`
+- 🚧 `CrudRepository`
 - ⬜ Query methods
 - ⬜ `@Query`
 - ⬜ Entity mapping
