@@ -26,6 +26,7 @@
         <module>01-spring-security/csrf-protection</module>
         <module>01-spring-security/session-management</module>
         <module>01-spring-security/oauth2</module>
+        <module>01-spring-security/jwt</module>
 
     </modules>
 
