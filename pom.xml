@@ -25,6 +25,7 @@
         <module>01-spring-security/method-security</module>
         <module>01-spring-security/csrf-protection</module>
         <module>01-spring-security/session-management</module>
+        <module>01-spring-security/oauth2</module>
 
     </modules>
 

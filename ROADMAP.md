@@ -51,9 +51,9 @@ Planned topics:
 - [x] Method security
 - [x] CSRF
 - [x] Session management
-- 🚧 OAuth2
+- [x] OAuth2
 - 🚧 JWT
-- ⬜ Security testing
+- 🚧 Security testing
 
 ---
 
