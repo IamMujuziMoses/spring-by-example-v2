@@ -1,3 +1,7 @@
+<div style="text-align: center;">
+<img src="docs/images/banner.PNG" alt="Spring by Example V2" width="2172">
+</div>
+
 # Spring by Example V2
 
 A focused collection of **small but extensive examples** covering the modern Spring ecosystem.
@@ -10,11 +14,13 @@ V2 moves outward into the broader Spring ecosystem and focuses on technologies c
 
 ---
 
-![Java](https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk)
-![Spring](https://img.shields.io/badge/Spring-Framework-orange?style=for-the-badge&logo=spring&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=coveralls)
-![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-green?style=for-the-badge&logo=github)
-![Coverage](https://img.shields.io/badge/coverage-00%25-blue?style=for-the-badge&logo=codecov&logoColor=white)
+![Java](https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk&logoColor=red)
+![Spring](https://img.shields.io/badge/Spring-Framework-orange?style=for-the-badge&logo=spring&logoColor=orange)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=coveralls&logoColor=yellow)
+[![Maven Build](https://img.shields.io/github/actions/workflow/status/IamMujuziMoses/spring-by-example-v2/maven.yml?style=for-the-badge&label=Maven%20Build&logo=apachemaven&logoColor=green)](https://github.com/IamMujuziMoses/spring-by-example-v2/actions/workflows/maven.yml)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue?style=for-the-badge&logo=github&logoColor=blue)
+![Module Completion](https://img.shields.io/badge/Module%20Completion-8.33%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
+[![Codecov](https://img.shields.io/codecov/c/github/IamMujuziMoses/spring-by-example-v2?style=for-the-badge&label=Codecov&logo=codecov&logoColor=violet&color=violet)](https://codecov.io/gh/IamMujuziMoses/spring-by-example-v2)
 
 ---
 
@@ -46,20 +52,20 @@ Each example should be:
 
 ## Modules
 
-| Module | Topic                | Status          |
-|--------|----------------------|-----------------|
-| 01     | Spring Security      | 🚧  In Progress |
-| 02     | Spring Data          | ⬜  Planned      |
-| 03     | Reactive Spring      | ⬜  Planned      |
-| 04     | Spring Modulith      | ⬜  Planned      |
-| 05     | Spring Testing       | ⬜  Planned      |
-| 06     | Capstone Application | ⬜  Planned      |
-| 07     | Spring Batch         | ⬜  Planned      |
-| 08     | Spring Integration   | ⬜  Planned      |
-| 09     | Spring Cloud         | ⬜  Planned      |
-| 10     | Spring AI            | ⬜  Planned      |
-| 11     | GraalVM Native       | ⬜  Planned      |
-| 12     | Kotlin               | ⬜  Planned      |
+| Module | Topic                | Status           |
+|--------|----------------------|------------------|
+| 01     | Spring Security      | [x]  Completed   |
+| 02     | Spring Data          | 🚧   In Progress |
+| 03     | Reactive Spring      | ⬜   Planned      |
+| 04     | Spring Modulith      | ⬜  Planned       |
+| 05     | Spring Testing       | ⬜  Planned       |
+| 06     | Capstone Application | ⬜  Planned       |
+| 07     | Spring Batch         | ⬜  Planned       |
+| 08     | Spring Integration   | ⬜  Planned       |
+| 09     | Spring Cloud         | ⬜  Planned       |
+| 10     | Spring AI            | ⬜  Planned       |
+| 11     | GraalVM Native       | ⬜  Planned       |
+| 12     | Kotlin               | ⬜  Planned       |
 
 ---
 
@@ -93,7 +99,7 @@ Kotlin
 
 ---
 
-### Module 01 — Spring Security 🚧
+### Module 01 — Spring Security ✅
 
 Explore application security with Spring Security.
 
@@ -112,7 +118,7 @@ Explore application security with Spring Security.
 
 ---
 
-### Module 02 — Spring Data
+### Module 02 — Spring Data 🚧
 
 Explore database access and repository abstractions.
 
@@ -380,6 +386,16 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
+## Contributors
+
+Thank you to everyone who has contributed! Here are the people who have helped so far:
+
+<a href="https://github.com/IamMujuziMoses/spring-by-example-v2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=IamMujuziMoses/spring-by-example-v2" alt="Contributors" />
+</a>
+
+---
+
 ## Contributing
 
 Contributions are welcome!
@@ -388,12 +404,21 @@ If you'd like to improve an example, fix an issue, or add a new learning module,
 
 ---
 
-## Contributors
+## Author
 
-Thank you to everyone who has contributed! Here are the people who have helped so far:
+<div style="text-align: center;">
 
-<a href="https://github.com/IamMujuziMoses/spring-by-example-v2/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=IamMujuziMoses/spring-by-example-v2" />
-</a>
+<img src="https://github.com/IamMujuziMoses.png" width="100px" alt="Mujuzi Moses" style="border-radius:50%;" />
+
+### Tusha
+
+[![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IamMujuziMoses)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/IamMujuziMoses)
+[![X](https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white)](https://x.com/iam_tusha)
+[![Dev.to](https://img.shields.io/badge/Dev.to-black?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/iammujuzimoses)
+[![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=mujuzimoses@gmail.com)
+[![WhatsApp](https://img.shields.io/badge/Phone-green?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/256757291334)
+
+</div>
 
 #### [Back To Top ⬆️](#spring-by-example-v2)

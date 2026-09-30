@@ -13,4 +13,4 @@ maven-build:
   script:
     - java -version
     - mvn -version
-    - mvn clean install
+    - mvn clean verify

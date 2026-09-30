@@ -19,20 +19,20 @@ Examples should be focused enough to understand individually while collectively 
 > - 🚧 In Progress
 
 
-| Module                    | Status         |
-|---------------------------|----------------|
-| 01 - Spring Security      | 🚧 In Progress |
-| 02 - Spring Data          | ⬜ Planned      |
-| 03 - Reactive Spring      | ⬜ Planned      |
-| 04 - Spring Modulith      | ⬜ Planned      |
-| 05 - Spring Testing       | ⬜ Planned      |
-| 06 - Capstone Application | ⬜ Planned      |
-| 07 - Spring Batch         | ⬜ Planned      |
-| 08 - Spring Integration   | ⬜ Planned      |
-| 09 - Spring Cloud         | ⬜ Planned      |
-| 10 - Spring AI            | ⬜ Planned      |
-| 11 - GraalVM Native       | ⬜ Planned      |
-| 12 - Kotlin               | ⬜ Planned      |
+| Module                    | Status          |
+|---------------------------|-----------------|
+| 01 - Spring Security      | [x] Completed   |
+| 02 - Spring Data          | 🚧  In Progress |
+| 03 - Reactive Spring      | ⬜ Planned       |
+| 04 - Spring Modulith      | ⬜  Planned      |
+| 05 - Spring Testing       | ⬜  Planned      |
+| 06 - Capstone Application | ⬜ Planned       |
+| 07 - Spring Batch         | ⬜ Planned       |
+| 08 - Spring Integration   | ⬜ Planned       |
+| 09 - Spring Cloud         | ⬜ Planned       |
+| 10 - Spring AI            | ⬜ Planned       |
+| 11 - GraalVM Native       | ⬜ Planned       |
+| 12 - Kotlin               | ⬜ Planned       |
 
 ---
 
