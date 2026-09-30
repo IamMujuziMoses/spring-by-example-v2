@@ -29,6 +29,9 @@
         <module>01-spring-security/jwt</module>
         <module>01-spring-security/security-testing</module>
 
+        <!--    02 Spring Data          -->
+        <module>02-spring-data/spring-data-repositories</module>
+
     </modules>
 
     <properties>
@@ -129,6 +132,7 @@
                 <version>0.8.13</version>
 
                 <executions>
+
                     <execution>
                         <id>prepare-agent</id>
                         <goals>
@@ -142,7 +146,14 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+
+                        <configuration>
+                            <excludes>
+                                <exclude>**/*Application.class</exclude>
+                            </excludes>
+                        </configuration>
                     </execution>
+
                 </executions>
             </plugin>
 
