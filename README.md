@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<p align="center">
 <img src="docs/images/banner.PNG" alt="Spring by Example V2" width="2172">
-</div>
+</p>
 
 # Spring by Example V2
 
@@ -406,7 +406,7 @@ If you'd like to improve an example, fix an issue, or add a new learning module,
 
 ## Author
 
-<div style="text-align: center;">
+<div align="center">
 
 <img src="https://github.com/IamMujuziMoses.png" width="100px" alt="Mujuzi Moses" style="border-radius:50%;" />
 
@@ -416,7 +416,7 @@ If you'd like to improve an example, fix an issue, or add a new learning module,
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/IamMujuziMoses)
 [![X](https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white)](https://x.com/iam_tusha)
 [![Dev.to](https://img.shields.io/badge/Dev.to-black?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/iammujuzimoses)
-[![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=mujuzimoses@gmail.com)
+[![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mujuzimoses@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/Phone-green?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/256757291334)
 
 </div>

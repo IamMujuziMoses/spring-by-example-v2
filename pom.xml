@@ -29,6 +29,9 @@
         <module>01-spring-security/jwt</module>
         <module>01-spring-security/security-testing</module>
 
+        <!--    02 Spring Data          -->
+        <module>02-spring-data/spring-data-repositories</module>
+
     </modules>
 
     <properties>
