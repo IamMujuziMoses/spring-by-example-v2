@@ -15,8 +15,7 @@ public class SecurityTestingController {
 
     private final SecurityTestingService securityTestingService;
 
-    public SecurityTestingController(
-            SecurityTestingService securityTestingService) {
+    public SecurityTestingController(SecurityTestingService securityTestingService) {
         this.securityTestingService = securityTestingService;
     }
 

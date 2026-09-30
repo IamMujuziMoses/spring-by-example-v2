@@ -29,7 +29,7 @@ Describe the Spring concept this module introduces and what learners should unde
 - [ ] Add `Main`
 - [ ] Add `AppConfigTest`
 - [ ] Write README
-- [ ] Verify `mvn clean install`
+- [ ] Verify `mvn clean verify`
 - [ ] Update `ROADMAP.md`
 
 ---

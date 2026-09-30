@@ -19,7 +19,7 @@
 How was this tested?
 
 ```bash
-mvn clean install
+mvn clean verify
 ```
 
 Closes
