@@ -66,9 +66,9 @@ Planned topics:
 - [x] Spring Data repositories
 - [x] `CrudRepository`
 - [x] Query methods
-- 🚧 `@Query`
+- [x] `@Query`
 - 🚧 Entity mapping
-- ⬜ Relationships
+- 🚧 Relationships
 - ⬜ Transactions
 - ⬜ Pagination
 - ⬜ Specifications

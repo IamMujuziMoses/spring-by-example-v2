@@ -33,6 +33,7 @@
         <module>02-spring-data/spring-data-repositories</module>
         <module>02-spring-data/crud-repository</module>
         <module>02-spring-data/query-methods</module>
+        <module>02-spring-data/query</module>
 
     </modules>
 
