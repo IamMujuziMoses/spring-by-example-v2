@@ -34,6 +34,7 @@
         <module>02-spring-data/crud-repository</module>
         <module>02-spring-data/query-methods</module>
         <module>02-spring-data/query</module>
+        <module>02-spring-data/entity-mapping</module>
 
     </modules>
 
