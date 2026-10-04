@@ -67,9 +67,9 @@ Planned topics:
 - [x] `CrudRepository`
 - [x] Query methods
 - [x] `@Query`
-- 🚧 Entity mapping
+- [x] Entity mapping
 - 🚧 Relationships
-- ⬜ Transactions
+- 🚧 Transactions
 - ⬜ Pagination
 - ⬜ Specifications
 - ⬜ Projections
