@@ -35,6 +35,7 @@
         <module>02-spring-data/query-methods</module>
         <module>02-spring-data/query</module>
         <module>02-spring-data/entity-mapping</module>
+        <module>02-spring-data/relationships</module>
 
     </modules>
 
