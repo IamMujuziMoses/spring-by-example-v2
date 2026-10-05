@@ -70,9 +70,9 @@ Planned topics:
 - [x] Entity mapping
 - [x] Relationships
 - [x] Transactions
-- 🚧 Pagination
+- [x] Pagination
 - 🚧 Specifications
-- ⬜ Projections
+- 🚧 Projections
 - ⬜ Auditing
 - ⬜ Custom repositories
 - ⬜ Database testing

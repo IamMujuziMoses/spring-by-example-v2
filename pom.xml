@@ -37,6 +37,7 @@
         <module>02-spring-data/entity-mapping</module>
         <module>02-spring-data/relationships</module>
         <module>02-spring-data/transactions</module>
+        <module>02-spring-data/pagination</module>
 
     </modules>
 
