@@ -71,9 +71,9 @@ Planned topics:
 - [x] Relationships
 - [x] Transactions
 - [x] Pagination
-- 🚧 Specifications
+- [x] Specifications
 - 🚧 Projections
-- ⬜ Auditing
+- 🚧 Auditing
 - ⬜ Custom repositories
 - ⬜ Database testing
 
