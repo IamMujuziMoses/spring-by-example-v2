@@ -69,9 +69,9 @@ Planned topics:
 - [x] `@Query`
 - [x] Entity mapping
 - [x] Relationships
-- 🚧 Transactions
+- [x] Transactions
 - 🚧 Pagination
-- ⬜ Specifications
+- 🚧 Specifications
 - ⬜ Projections
 - ⬜ Auditing
 - ⬜ Custom repositories
