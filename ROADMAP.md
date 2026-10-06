@@ -73,9 +73,9 @@ Planned topics:
 - [x] Pagination
 - [x] Specifications
 - [x] Projections
-- 🚧 Auditing
+- [x] Auditing
 - 🚧 Custom repositories
-- ⬜ Database testing
+- 🚧 Database testing
 
 ---
 
