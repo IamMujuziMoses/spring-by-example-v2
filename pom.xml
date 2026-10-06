@@ -39,6 +39,7 @@
         <module>02-spring-data/transactions</module>
         <module>02-spring-data/pagination</module>
         <module>02-spring-data/specifications</module>
+        <module>02-spring-data/projections</module>
 
     </modules>
 
