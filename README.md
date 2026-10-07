@@ -408,7 +408,11 @@ If you'd like to improve an example, fix an issue, or add a new learning module,
 
 <div align="center">
 
-<img src="https://github.com/IamMujuziMoses.png" width="100" height="100" alt="Mujuzi Moses" style="border-radius: 50%; object-fit: cover;" />
+<div style="width:100px;height:100px;border-radius:50%;overflow:hidden;">
+
+  <img src="https://github.com/IamMujuziMoses.png" width="100" height="100" alt="Mujuzi Moses" style="display:block;object-fit:cover;" />
+
+</div>
 
 ### Tusha
 
