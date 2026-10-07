@@ -75,7 +75,7 @@ Planned topics:
 - [x] Projections
 - [x] Auditing
 - [x] Custom repositories
-- 🚧 Database testing
+- [x] Database testing
 
 ---
 
@@ -86,7 +86,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Reactor
-- ⬜ `Mono`
+- 🚧 `Mono`
 - ⬜ `Flux`
 - ⬜ Reactive pipelines
 - ⬜ Backpressure
