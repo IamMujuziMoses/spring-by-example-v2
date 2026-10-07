@@ -44,6 +44,9 @@
         <module>02-spring-data/custom-repositories</module>
         <module>02-spring-data/database-testing</module>
 
+        <!--    03 Reactive Spring     -->
+        <module>03-reactive-spring/reactor</module>
+
     </modules>
 
     <properties>
