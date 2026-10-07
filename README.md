@@ -19,7 +19,7 @@ V2 moves outward into the broader Spring ecosystem and focuses on technologies c
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=coveralls&logoColor=yellow)
 [![Maven Build](https://img.shields.io/github/actions/workflow/status/IamMujuziMoses/spring-by-example-v2/maven.yml?style=for-the-badge&label=Maven%20Build&logo=apachemaven&logoColor=green)](https://github.com/IamMujuziMoses/spring-by-example-v2/actions/workflows/maven.yml)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue?style=for-the-badge&logo=github&logoColor=blue)
-![Module Completion](https://img.shields.io/badge/Module%20Completion-8.33%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
+![Module Completion](https://img.shields.io/badge/Module%20Completion-16.67%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
 [![Codecov](https://img.shields.io/codecov/c/github/IamMujuziMoses/spring-by-example-v2?style=for-the-badge&label=Codecov&logo=codecov&logoColor=violet&color=violet)](https://codecov.io/gh/IamMujuziMoses/spring-by-example-v2)
 
 ---
@@ -52,20 +52,20 @@ Each example should be:
 
 ## Modules
 
-| Module | Topic                | Status           |
-|--------|----------------------|------------------|
-| 01     | Spring Security      | [x]  Completed   |
-| 02     | Spring Data          | 🚧   In Progress |
-| 03     | Reactive Spring      | ⬜   Planned      |
-| 04     | Spring Modulith      | ⬜  Planned       |
-| 05     | Spring Testing       | ⬜  Planned       |
-| 06     | Capstone Application | ⬜  Planned       |
-| 07     | Spring Batch         | ⬜  Planned       |
-| 08     | Spring Integration   | ⬜  Planned       |
-| 09     | Spring Cloud         | ⬜  Planned       |
-| 10     | Spring AI            | ⬜  Planned       |
-| 11     | GraalVM Native       | ⬜  Planned       |
-| 12     | Kotlin               | ⬜  Planned       |
+| Module | Topic                | Status         |
+|--------|----------------------|----------------|
+| 01     | Spring Security      | [x] Completed  |
+| 02     | Spring Data          | [x] Completed  |
+| 03     | Reactive Spring      | 🚧 In Progress |
+| 04     | Spring Modulith      | ⬜  Planned     |
+| 05     | Spring Testing       | ⬜  Planned     |
+| 06     | Capstone Application | ⬜  Planned     |
+| 07     | Spring Batch         | ⬜  Planned     |
+| 08     | Spring Integration   | ⬜  Planned     |
+| 09     | Spring Cloud         | ⬜  Planned     |
+| 10     | Spring AI            | ⬜  Planned     |
+| 11     | GraalVM Native       | ⬜  Planned     |
+| 12     | Kotlin               | ⬜  Planned     |
 
 ---
 
@@ -118,7 +118,7 @@ Explore application security with Spring Security.
 
 ---
 
-### Module 02 — Spring Data 🚧
+### Module 02 — Spring Data ✅
 
 Explore database access and repository abstractions.
 
@@ -138,7 +138,7 @@ Explore database access and repository abstractions.
 
 ---
 
-### Module 03 — Reactive Spring
+### Module 03 — Reactive Spring 🚧
 
 Explore reactive programming with Spring.
 
@@ -408,7 +408,7 @@ If you'd like to improve an example, fix an issue, or add a new learning module,
 
 <div align="center">
 
-<img src="https://github.com/IamMujuziMoses.png" width="100px" alt="Mujuzi Moses" style="border-radius:50%;" />
+<img src="https://github.com/IamMujuziMoses.png" width="100" height="100" alt="Mujuzi Moses" style="border-radius: 50%; object-fit: cover;" />
 
 ### Tusha
 
