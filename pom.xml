@@ -42,6 +42,7 @@
         <module>02-spring-data/projections</module>
         <module>02-spring-data/auditing</module>
         <module>02-spring-data/custom-repositories</module>
+        <module>02-spring-data/database-testing</module>
 
     </modules>
 
