@@ -47,6 +47,7 @@
         <!--    03 Reactive Spring     -->
         <module>03-reactive-spring/reactor</module>
         <module>03-reactive-spring/mono</module>
+        <module>03-reactive-spring/flux</module>
 
     </modules>
 
