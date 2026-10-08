@@ -88,9 +88,9 @@ Planned topics:
 - [x] Reactor
 - [x] `Mono`
 - [x] `Flux`
-- 🚧 Reactive pipelines
+- [x] Reactive pipelines
 - 🚧 Backpressure
-- ⬜ WebFlux
+- 🚧 WebFlux
 - ⬜ Reactive controllers
 - ⬜ Reactive clients
 - ⬜ Reactive data access
