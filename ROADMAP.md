@@ -89,9 +89,9 @@ Planned topics:
 - [x] `Mono`
 - [x] `Flux`
 - [x] Reactive pipelines
-- 🚧 Backpressure
+- [x] Backpressure
 - 🚧 WebFlux
-- ⬜ Reactive controllers
+- 🚧 Reactive controllers
 - ⬜ Reactive clients
 - ⬜ Reactive data access
 - ⬜ Error handling
