@@ -90,9 +90,9 @@ Planned topics:
 - [x] `Flux`
 - [x] Reactive pipelines
 - [x] Backpressure
-- 🚧 WebFlux
+- [x] WebFlux
 - 🚧 Reactive controllers
-- ⬜ Reactive clients
+- 🚧 Reactive clients
 - ⬜ Reactive data access
 - ⬜ Error handling
 - ⬜ Reactive testing
