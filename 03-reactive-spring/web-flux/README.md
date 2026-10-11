@@ -30,7 +30,7 @@ A traditional controller might return a value directly:
 ```java
 @GetMapping("/{name}")
 public Greeting greet(@PathVariable String name) {
-    return productService.greet(name);
+    return greetingService.greet(name);
 }
 ```
 
@@ -39,7 +39,7 @@ A WebFlux controller can instead return a publisher:
 ```java
 @GetMapping("/{name}")
 public Mono<Greeting> greet(@PathVariable String name) {
-    return productService.greet(name);
+    return greetingService.greet(name);
 }
 ```
 
@@ -79,7 +79,7 @@ The controller exposes it through an HTTP endpoint:
 ```java
 @GetMapping("/{name}")
 public Mono<Greeting> greet(@PathVariable String name) {
-    return productService.greet(name);
+    return greetingService.greet(name);
 }
 ```
 
@@ -118,7 +118,7 @@ The controller exposes the publisher through a collection endpoint:
 ```java
 @GetMapping
 public Flux<Greeting> greetAll(@RequestParam(name = "names") List<String> names) {
-    return productService.greetAll(names);
+    return greetingService.greetAll(names);
 }
 ```
 
@@ -189,7 +189,7 @@ A WebFlux controller should generally return the publisher it wants the framewor
 ```java
 @GetMapping("/{name}")
 public Mono<Greeting> greet(@PathVariable String name) {
-    return productService.greet(name);
+    return greetingService.greet(name);
 }
 ```
 
@@ -199,7 +199,7 @@ Avoid subscribing inside the controller and returning an unrelated value:
 // Avoid this pattern in a reactive controller.
 @GetMapping("/{name}")
 public String greet(@PathVariable String name) {
-    productService.greet(name).subscribe();
+    greetingService.greet(name).subscribe();
     
     return "Request received";
 }

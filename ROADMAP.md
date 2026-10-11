@@ -92,9 +92,9 @@ Planned topics:
 - [x] Backpressure
 - [x] WebFlux
 - [x] Reactive controllers
-- 🚧 Reactive clients
+- [x] Reactive clients
 - 🚧 Reactive data access
-- ⬜ Error handling
+- 🚧 Error handling
 - ⬜ Reactive testing
 
 ---

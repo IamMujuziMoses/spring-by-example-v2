@@ -52,6 +52,7 @@
         <module>03-reactive-spring/backpressure</module>
         <module>03-reactive-spring/web-flux</module>
         <module>03-reactive-spring/reactive-controllers</module>
+        <module>03-reactive-spring/reactive-clients</module>
 
     </modules>
 
