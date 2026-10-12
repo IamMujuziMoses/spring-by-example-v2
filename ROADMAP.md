@@ -93,9 +93,9 @@ Planned topics:
 - [x] WebFlux
 - [x] Reactive controllers
 - [x] Reactive clients
-- 🚧 Reactive data access
+- [x] Reactive data access
 - 🚧 Error handling
-- ⬜ Reactive testing
+- 🚧 Reactive testing
 
 ---
 
