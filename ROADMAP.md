@@ -94,7 +94,7 @@ Planned topics:
 - [x] Reactive controllers
 - [x] Reactive clients
 - [x] Reactive data access
-- 🚧 Error handling
+- [x] Error handling
 - 🚧 Reactive testing
 
 ---
@@ -105,7 +105,7 @@ Planned topics:
 
 Planned topics:
 
-- ⬜ Application modules
+- 🚧 Application modules
 - ⬜ Module boundaries
 - ⬜ Module dependencies
 - ⬜ Application events

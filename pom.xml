@@ -54,6 +54,7 @@
         <module>03-reactive-spring/reactive-controllers</module>
         <module>03-reactive-spring/reactive-clients</module>
         <module>03-reactive-spring/reactive-data-access</module>
+        <module>03-reactive-spring/reactive-error-handling</module>
 
     </modules>
 
