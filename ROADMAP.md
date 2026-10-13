@@ -95,7 +95,7 @@ Planned topics:
 - [x] Reactive clients
 - [x] Reactive data access
 - [x] Error handling
-- 🚧 Reactive testing
+- [x] Reactive testing
 
 ---
 
@@ -106,7 +106,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Application modules
-- ⬜ Module boundaries
+- 🚧 Module boundaries
 - ⬜ Module dependencies
 - ⬜ Application events
 - ⬜ Event externalization
