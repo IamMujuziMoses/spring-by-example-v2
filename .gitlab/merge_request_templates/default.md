@@ -2,7 +2,7 @@
 
 <!-- Explain what this PR adds -->
 
-## Related Example
+## related example(s)
 
 <!-- Example path -->
 
