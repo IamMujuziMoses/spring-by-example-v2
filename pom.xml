@@ -60,6 +60,7 @@
         <!--    04 Spring Modulith     -->
         <module>04-spring-modulith/application-modules</module>
         <module>04-spring-modulith/module-boundaries</module>
+        <module>04-spring-modulith/module-dependencies</module>
 
     </modules>
 

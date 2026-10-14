@@ -107,9 +107,9 @@ Planned topics:
 
 - [x] Application modules
 - [x] Module boundaries
-- 🚧 Module dependencies
+- [x] Module dependencies
 - 🚧 Application events
-- ⬜ Event externalization
+- 🚧 Event externalization
 - ⬜ Module verification
 - ⬜ Documentation
 - ⬜ Module testing
