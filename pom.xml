@@ -62,6 +62,7 @@
         <module>04-spring-modulith/module-boundaries</module>
         <module>04-spring-modulith/module-dependencies</module>
         <module>04-spring-modulith/application-events</module>
+        <module>04-spring-modulith/event-externalization</module>
 
     </modules>
 
