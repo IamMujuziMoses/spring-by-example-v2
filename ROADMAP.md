@@ -110,9 +110,9 @@ Planned topics:
 - [x] Module dependencies
 - [x] Application events
 - [x] Event externalization
-- 🚧 Module verification
+- [x] Module verification
 - 🚧 Documentation
-- ⬜ Module testing
+- 🚧 Module testing
 
 ---
 
