@@ -112,7 +112,7 @@ Planned topics:
 - [x] Event externalization
 - [x] Module verification
 - [x] Documentation
-- 🚧 Module testing
+- [x] Module testing
 
 ---
 
@@ -123,7 +123,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Spring TestContext Framework
-- ⬜ `@SpringJUnitConfig`
+- 🚧 `@SpringJUnitConfig`
 - ⬜ `@SpringBootTest`
 - ⬜ MVC testing
 - ⬜ Test slices

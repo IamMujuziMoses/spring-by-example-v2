@@ -65,6 +65,7 @@
         <module>04-spring-modulith/event-externalization</module>
         <module>04-spring-modulith/module-verification</module>
         <module>04-spring-modulith/module-documentation</module>
+        <module>04-spring-modulith/module-testing</module>
 
     </modules>
 
