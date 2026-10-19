@@ -69,6 +69,7 @@
 
         <!--    05 Spring Testing      -->
         <module>05-spring-testing/spring-testcontext-framework</module>
+        <module>05-spring-testing/spring-junit-config</module>
 
     </modules>
 
