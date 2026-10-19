@@ -67,6 +67,9 @@
         <module>04-spring-modulith/module-documentation</module>
         <module>04-spring-modulith/module-testing</module>
 
+        <!--    05 Spring Testing      -->
+        <module>05-spring-testing/spring-testcontext-framework</module>
+
     </modules>
 
     <properties>
