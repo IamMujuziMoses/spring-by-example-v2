@@ -125,9 +125,9 @@ Planned topics:
 - [x] Spring TestContext Framework
 - [x] `@SpringJUnitConfig`
 - [x] `@SpringBootTest`
-- 🚧 MVC testing
+- [x] MVC testing
 - 🚧 Test slices
-- ⬜ MockMvc
+- 🚧 MockMvc
 - ⬜ Transaction testing
 - ⬜ Security testing
 - ⬜ Integration testing
