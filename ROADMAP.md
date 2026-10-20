@@ -126,9 +126,9 @@ Planned topics:
 - [x] `@SpringJUnitConfig`
 - [x] `@SpringBootTest`
 - [x] MVC testing
-- 🚧 Test slices
+- [x] Test slices
 - 🚧 MockMvc
-- ⬜ Transaction testing
+- 🚧 Transaction testing
 - ⬜ Security testing
 - ⬜ Integration testing
 - ⬜ Testcontainers
