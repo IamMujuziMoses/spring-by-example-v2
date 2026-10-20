@@ -72,6 +72,7 @@
         <module>05-spring-testing/spring-junit-config</module>
         <module>05-spring-testing/spring-boot-test</module>
         <module>05-spring-testing/spring-mvc-testing</module>
+        <module>05-spring-testing/spring-test-slices</module>
 
     </modules>
 
