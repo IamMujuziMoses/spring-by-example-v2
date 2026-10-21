@@ -129,9 +129,9 @@ Planned topics:
 - [x] Test slices
 - [x] MockMvc
 - [x] Transaction testing
-- 🚧 Security testing
+- [x] Security testing
 - 🚧 Integration testing
-- ⬜ Testcontainers
+- 🚧 Testcontainers
 - ⬜ Application context testing
 - ⬜ Context caching
 
