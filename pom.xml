@@ -74,6 +74,7 @@
         <module>05-spring-testing/spring-mvc-testing</module>
         <module>05-spring-testing/spring-test-slices</module>
         <module>05-spring-testing/spring-mockmvc</module>
+        <module>05-spring-testing/spring-transaction-testing</module>
 
     </modules>
 
