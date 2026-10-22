@@ -76,6 +76,7 @@
         <module>05-spring-testing/spring-mockmvc</module>
         <module>05-spring-testing/spring-transaction-testing</module>
         <module>05-spring-testing/spring-security-testing</module>
+        <module>05-spring-testing/spring-integration-testing</module>
 
     </modules>
 
