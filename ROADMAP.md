@@ -131,9 +131,9 @@ Planned topics:
 - [x] Transaction testing
 - [x] Security testing
 - [x] Integration testing
-- 🚧 Testcontainers
+- [x] Testcontainers
 - 🚧 Application context testing
-- ⬜ Context caching
+- 🚧 Context caching
 
 ---
 
