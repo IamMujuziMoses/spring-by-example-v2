@@ -130,9 +130,9 @@ Planned topics:
 - [x] MockMvc
 - [x] Transaction testing
 - [x] Security testing
-- 🚧 Integration testing
+- [x] Integration testing
 - 🚧 Testcontainers
-- ⬜ Application context testing
+- 🚧 Application context testing
 - ⬜ Context caching
 
 ---
