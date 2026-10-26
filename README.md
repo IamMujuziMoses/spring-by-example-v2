@@ -19,7 +19,7 @@ V2 moves outward into the broader Spring ecosystem and focuses on technologies c
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=coveralls&logoColor=yellow)
 [![Maven Build](https://img.shields.io/github/actions/workflow/status/IamMujuziMoses/spring-by-example-v2/maven.yml?style=for-the-badge&label=Maven%20Build&logo=apachemaven&logoColor=green)](https://github.com/IamMujuziMoses/spring-by-example-v2/actions/workflows/maven.yml)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue?style=for-the-badge&logo=github&logoColor=blue)
-![Module Completion](https://img.shields.io/badge/Module%20Completion-33.33%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
+![Module Completion](https://img.shields.io/badge/Module%20Completion-41.67%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
 [![Codecov](https://img.shields.io/codecov/c/github/IamMujuziMoses/spring-by-example-v2?style=for-the-badge&label=Codecov&logo=codecov&logoColor=violet&color=violet)](https://codecov.io/gh/IamMujuziMoses/spring-by-example-v2)
 
 ---
@@ -58,8 +58,8 @@ Each example should be:
 | 02     | Spring Data          | [x] Completed  |
 | 03     | Reactive Spring      | [x] Completed  |
 | 04     | Spring Modulith      | [x] Completed  |
-| 05     | Spring Testing       | 🚧 In Progress |
-| 06     | Capstone Application | ⬜  Planned     |
+| 05     | Spring Testing       | [x] Completed  |
+| 06     | Capstone Application | 🚧 In Progress |
 | 07     | Spring Batch         | ⬜  Planned     |
 | 08     | Spring Integration   | ⬜  Planned     |
 | 09     | Spring Cloud         | ⬜  Planned     |
@@ -171,7 +171,7 @@ Explore modular monolith architecture with Spring Modulith.
 
 ---
 
-### Module 05 — Spring Testing 🚧
+### Module 05 — Spring Testing ✅
 
 Explore testing strategies for Spring applications.
 
@@ -190,7 +190,7 @@ Explore testing strategies for Spring applications.
 
 ---
 
-### Module 06 — Capstone Application
+### Module 06 — Capstone Application 🚧
 
 Combine concepts from the first five modules into a realistic Spring application.
 
