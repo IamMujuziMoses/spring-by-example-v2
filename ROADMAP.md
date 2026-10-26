@@ -133,7 +133,7 @@ Planned topics:
 - [x] Integration testing
 - [x] Testcontainers
 - [x] Application context testing
-- 🚧 Context caching
+- [x] Context caching
 
 ---
 
@@ -144,7 +144,7 @@ Planned topics:
 The capstone should demonstrate:
 
 - 🚧 Spring Boot
-- ⬜ Spring Security
+- 🚧 Spring Security
 - ⬜ Spring Data
 - ⬜ REST APIs
 - ⬜ Transactions
