@@ -78,6 +78,7 @@
         <module>05-spring-testing/spring-security-testing</module>
         <module>05-spring-testing/spring-integration-testing</module>
         <module>05-spring-testing/spring-test-containers</module>
+        <module>05-spring-testing/application-context-testing</module>
 
     </modules>
 
@@ -91,6 +92,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
+        <skipTestcontainersTests>true</skipTestcontainersTests>
     </properties>
 
     <dependencyManagement>

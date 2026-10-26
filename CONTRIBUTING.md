@@ -252,6 +252,26 @@ Before submitting a pull request, run the complete Maven verification:
 mvn clean verify
 ```
 
+### Docker-Dependent Tests
+
+Some examples use `Testcontainers` to run integration tests against containerized services.
+
+These tests may require Docker to be installed and running. The `Testcontainers` module skips its tests by default so contributors can build the repository without Docker.
+
+To include the `Testcontainers` tests, start Docker and execute:
+
+```bash
+mvn clean verify -DskipTestcontainersTests=false
+```
+
+or running only the `Testcontainers` module tests
+
+```bash
+mvn -pl 05-spring-testing/testcontainers -am clean verify -DskipTestcontainersTests=false
+```
+
+When modifying Docker-dependent examples, contributors should run the relevant tests with Docker available before submitting their changes.
+
 This runs the project's build, tests, Checkstyle validation, and other configured verification steps.
 
 You should also make sure the example can be started independently when applicable:

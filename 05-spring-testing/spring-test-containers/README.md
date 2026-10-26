@@ -481,25 +481,41 @@ For the normal integration testing workflow, run the tests instead.
 
 ## Running the Tests
 
-From the module directory:
+This example uses `Testcontainers` to start a `PostgreSQL` container for integration testing.
+
+Docker must be installed and running for the integration tests to execute.
+
+### Running Without Docker
+
+The `Testcontainers` tests are skipped by default so that the repository's Maven build can run without requiring Docker.
+
+From the repository root:
 
 ```bash
-mvn test
+mvn clean verify
 ```
 
-Or from the repository root:
+### Running With Docker
+
+Start Docker, then execute:
 
 ```bash
-mvn -pl 05-spring-testing/testcontainers test
+mvn clean verify -DskipTestcontainersTests=false
 ```
 
-If the repository provides a Maven Wrapper, you can use:
+or running only the `Testcontainers` module tests
 
 ```bash
-./mvnw -pl 05-spring-testing/testcontainers test
+mvn -pl 05-spring-testing/testcontainers -am clean verify -DskipTestcontainersTests=false
 ```
 
-Make sure Docker is running before executing the tests.
+The `skipTestcontainersTests` property controls whether this module's tests are executed. Setting it to `false` enables the tests.
+
+During execution, Testcontainers starts PostgreSQL, Spring Boot configures the datasource using `@ServiceConnection`, and the integration tests run against the containerized database.
+
+The container lifecycle is managed by Testcontainers and the JUnit integration.
+
+> **Note:** Skipping these tests does not verify the PostgreSQL integration. Run them with Docker before submitting changes that affect this example.
 
 The expected lifecycle is:
 
