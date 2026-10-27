@@ -83,6 +83,7 @@
 
         <!--    06 Capstone Application -->
         <module>06-capstone-application/application-design-and-architecture</module>
+        <module>06-capstone-application/spring-boot-application</module>
 
     </modules>
 
@@ -196,6 +197,7 @@
                 <configuration>
                     <excludes>
                         <exclude>**/*Application.class</exclude>
+                        <exclude>**/*ApplicationSetup.class</exclude>
                     </excludes>
                 </configuration>
 
