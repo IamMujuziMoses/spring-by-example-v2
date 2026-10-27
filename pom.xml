@@ -84,6 +84,7 @@
         <!--    06 Capstone Application -->
         <module>06-capstone-application/application-design-and-architecture</module>
         <module>06-capstone-application/spring-boot-application</module>
+        <module>06-capstone-application/spring-data-and-persistence</module>
 
     </modules>
 

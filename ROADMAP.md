@@ -145,9 +145,9 @@ The capstone should demonstrate:
 
 - [x] Application Design and Architecture
 - [x] Spring Boot
-- 🚧 Spring Data and Persistence
+- [x] Spring Data and Persistence
 - 🚧 REST APIs
-- ⬜️ Spring Security
+- 🚧 Spring Security
 - ⬜️ Transaction Management
 - ⬜️ Modular Architecture with Spring Modulith
 - ⬜️ Application Testing
