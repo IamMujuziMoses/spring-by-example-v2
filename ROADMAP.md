@@ -139,18 +139,20 @@ Planned topics:
 
 ## Module 06 — Capstone Application
 
-### Combine concepts from the first five modules into a realistic Spring application.
+### Combine concepts from the first five modules into a realistic, runnable Spring application.
 
 The capstone should demonstrate:
 
+- [x] Application Design and Architecture
 - 🚧 Spring Boot
-- 🚧 Spring Security
-- ⬜ Spring Data
+- 🚧 Spring Data and Persistence
 - ⬜ REST APIs
-- ⬜ Transactions
-- ⬜ Modular architecture
-- ⬜ Testing
-- ⬜ Integration between the technologies
+- ⬜️ Spring Security
+- ⬜️ Transaction Management
+- ⬜️ Modular Architecture with Spring Modulith
+- ⬜️ Application Testing
+- ⬜️ Integration Between Spring Technologies
+- ⬜️ End-to-End Application Verification
 
 The application should remain understandable rather than becoming a large production system.
 

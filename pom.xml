@@ -81,6 +81,9 @@
         <module>05-spring-testing/application-context-testing</module>
         <module>05-spring-testing/spring-context-caching</module>
 
+        <!--    06 Capstone Application -->
+        <module>06-capstone-application/application-design-and-architecture</module>
+
     </modules>
 
     <properties>
