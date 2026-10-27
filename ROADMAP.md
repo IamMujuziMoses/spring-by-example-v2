@@ -144,9 +144,9 @@ Planned topics:
 The capstone should demonstrate:
 
 - [x] Application Design and Architecture
-- 🚧 Spring Boot
+- [x] Spring Boot
 - 🚧 Spring Data and Persistence
-- ⬜ REST APIs
+- 🚧 REST APIs
 - ⬜️ Spring Security
 - ⬜️ Transaction Management
 - ⬜️ Modular Architecture with Spring Modulith
