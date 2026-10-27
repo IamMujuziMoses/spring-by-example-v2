@@ -55,6 +55,22 @@ public class TaskDomainTest {
         assertThrows(TaskTransitionException.class, () -> task.transitionTo(TaskStatus.TODO));
     }
 
+    @Test
+    void shouldRejectBlankTaskTitle() {
+        assertThrows(IllegalArgumentException.class, () -> new Task(
+                new TaskId("task-1"), new ProjectId("project-1"), " ", "Description", TaskStatus.TODO));
+    }
+
+    @Test
+    void shouldTransitionInProgressTaskToCompleted() {
+        Task task = createTask().transitionTo(TaskStatus.IN_PROGRESS);
+
+        Task completedTask = task.transitionTo(TaskStatus.COMPLETED);
+
+        assertEquals(TaskStatus.COMPLETED, completedTask.status());
+        assertEquals(TaskStatus.IN_PROGRESS, task.status());
+    }
+
     private Task createTask() {
         return new Task(new TaskId("task-1"),
                 new ProjectId("project-1"),

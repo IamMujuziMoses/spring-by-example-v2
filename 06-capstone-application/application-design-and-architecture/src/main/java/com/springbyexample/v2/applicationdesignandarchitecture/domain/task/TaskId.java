@@ -18,8 +18,7 @@ public record TaskId(String value) {
         Objects.requireNonNull(value, "Task ID must not be null");
 
         if (value.isBlank()) {
-            throw new IllegalArgumentException(
-                    "Task ID must not be blank");
+            throw new IllegalArgumentException("Task ID must not be blank");
         }
     }
 }
