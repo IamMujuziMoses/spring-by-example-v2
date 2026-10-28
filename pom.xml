@@ -86,6 +86,7 @@
         <module>06-capstone-application/spring-boot-application</module>
         <module>06-capstone-application/spring-data-and-persistence</module>
         <module>06-capstone-application/rest-apis</module>
+        <module>06-capstone-application/spring-security</module>
 
     </modules>
 
