@@ -88,6 +88,7 @@
         <module>06-capstone-application/rest-apis</module>
         <module>06-capstone-application/spring-security</module>
         <module>06-capstone-application/transaction-management</module>
+        <module>06-capstone-application/modular-architecture</module>
 
     </modules>
 
