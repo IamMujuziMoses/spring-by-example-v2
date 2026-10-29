@@ -149,9 +149,9 @@ The capstone should demonstrate:
 - [x] REST APIs
 - [x] Spring Security
 - [x] Transaction Management
-- 🚧 Modular Architecture with Spring Modulith
+- [x] Modular Architecture with Spring Modulith
 - 🚧 Application Testing
-- ⬜️ Integration Between Spring Technologies
+- 🚧 Integration Between Spring Technologies
 - ⬜️ End-to-End Application Verification
 
 The application should remain understandable rather than becoming a large production system.
