@@ -148,9 +148,9 @@ The capstone should demonstrate:
 - [x] Spring Data and Persistence
 - [x] REST APIs
 - [x] Spring Security
-- 🚧 Transaction Management
+- [x] Transaction Management
 - 🚧 Modular Architecture with Spring Modulith
-- ⬜️ Application Testing
+- 🚧 Application Testing
 - ⬜️ Integration Between Spring Technologies
 - ⬜️ End-to-End Application Verification
 
