@@ -90,6 +90,7 @@
         <module>06-capstone-application/transaction-management</module>
         <module>06-capstone-application/modular-architecture</module>
         <module>06-capstone-application/application-testing</module>
+        <module>06-capstone-application/integration-between-spring-technologies</module>
 
     </modules>
 
