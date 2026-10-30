@@ -150,9 +150,9 @@ The capstone should demonstrate:
 - [x] Spring Security
 - [x] Transaction Management
 - [x] Modular Architecture with Spring Modulith
-- 🚧 Application Testing
+- [x] Application Testing
 - 🚧 Integration Between Spring Technologies
-- ⬜️ End-to-End Application Verification
+- 🚧 End-to-End Application Verification
 
 The application should remain understandable rather than becoming a large production system.
 
