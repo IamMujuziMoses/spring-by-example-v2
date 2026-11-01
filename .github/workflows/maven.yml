@@ -35,3 +35,16 @@ jobs:
         uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Print application logs on failure
+        if: failure()
+        run: |
+          echo "===== Order Management Application Logs ====="
+          cat "$RUNNER_TEMP/order-management.log"
+
+      - name: Upload application logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: order-management-application-logs
+          path: ${{ runner.temp }}/order-management.log

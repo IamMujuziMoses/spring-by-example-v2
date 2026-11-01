@@ -1,0 +1,11 @@
+verification:
+  base-url: http://localhost:8080
+  customer:
+    username: customer
+    password: password
+  customer2:
+    username: customer2
+    password: password
+  admin:
+    username: admin
+    password: password
