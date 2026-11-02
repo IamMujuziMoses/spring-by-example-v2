@@ -26,8 +26,8 @@ Examples should be focused enough to understand individually while collectively 
 | 03 - Reactive Spring      | [x] Completed  |
 | 04 - Spring Modulith      | [x] Completed  |
 | 05 - Spring Testing       | [x] Completed  |
-| 06 - Capstone Application | 🚧 In Progress |
-| 07 - Spring Batch         | ⬜ Planned      |
+| 06 - Capstone Application | [x] Completed  |
+| 07 - Spring Batch         | 🚧 In Progress |
 | 08 - Spring Integration   | ⬜ Planned      |
 | 09 - Spring Cloud         | ⬜ Planned      |
 | 10 - Spring AI            | ⬜ Planned      |
