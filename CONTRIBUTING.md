@@ -280,6 +280,32 @@ You should also make sure the example can be started independently when applicab
 mvn spring-boot:run
 ```
 
+### End-to-End Application Verification Tests
+
+Some examples use end-to-end tests to verify application behavior through external HTTP requests.
+
+These tests depend on a separately running application and are skipped by default during the regular Maven build. This allows contributors to execute `mvn clean verify` without having to start the dependent application.
+
+To run the End-to-End Application Verification tests locally, first start the corresponding Integration Between Spring Technologies application:
+
+```bash
+mvn -pl 06-capstone-application/integration-between-spring-technologies \
+org.springframework.boot:spring-boot-maven-plugin:run
+```
+
+In another terminal, execute the end-to-end tests
+
+```bash
+mvn -pl 06-capstone-application/end-to-end-application-verification \
+-Dskip.e2e.tests=false test
+```
+
+The tests communicate with the running application through HTTP. Make sure the application is available at `http://localhost:8080` before executing them.
+
+When modifying end-to-end verification examples, contributors should start the corresponding application and run the relevant tests before submitting their changes.
+
+The dedicated GitHub Actions workflow automatically starts the Integration Between Spring Technologies application and executes the end-to-end verification tests.
+
 ### GitHub Actions
 
 Pull requests and pushes to `main` run the repository's automated validation workflows.

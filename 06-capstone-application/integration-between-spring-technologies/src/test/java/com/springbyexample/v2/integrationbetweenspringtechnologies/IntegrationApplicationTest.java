@@ -200,4 +200,15 @@ public class IntegrationApplicationTest {
         assertThat(orderRepository.count()).isZero();
         assertThat(auditRepository.count()).isZero();
     }
+
+    @Test
+    void shouldAllowAdminToRetrieveAuditEntries() throws Exception {
+        var order = orderService.placeOrder("customer", product.getId(), 1);
+
+        mockMvc.perform(get("/api/audit").with(httpBasic("admin", "password")))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(1))
+                .andExpect(jsonPath("$[0].eventType").value("ORDER_PLACED"))
+                .andExpect(jsonPath("$[0].aggregateId").value(order.getId()));
+    }
 }

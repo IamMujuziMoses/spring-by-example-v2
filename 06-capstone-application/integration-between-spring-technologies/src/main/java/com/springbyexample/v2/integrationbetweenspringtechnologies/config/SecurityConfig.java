@@ -32,7 +32,7 @@ public class SecurityConfig {
                         .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/api/products/**").permitAll()
                         .requestMatchers("/api/orders/**").hasRole("CUSTOMER")
-                        .requestMatchers("/api/inventory/**").hasRole("ADMIN")
+                        .requestMatchers("/api/inventory/**", "/api/audit/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults());
 
@@ -45,10 +45,13 @@ public class SecurityConfig {
         UserDetails customer = User.withUsername("customer").password(passwordEncoder.encode("password"))
                 .roles("CUSTOMER").build();
 
+        UserDetails customer2 = User.withUsername("customer2").password(passwordEncoder.encode("password"))
+                .roles("CUSTOMER").build();
+
         UserDetails admin = User.withUsername("admin").password(passwordEncoder.encode("password"))
                 .roles("ADMIN").build();
 
-        return new InMemoryUserDetailsManager(customer, admin);
+        return new InMemoryUserDetailsManager(customer, customer2, admin);
     }
 
     @Bean

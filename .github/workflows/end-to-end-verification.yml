@@ -1,0 +1,91 @@
+name: End-to-End Application Verification
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  end-to-end-verification:
+    name: Verify Order Management Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Build Order Management Application
+        run: |
+          mvn -B -pl 06-capstone-application/integration-between-spring-technologies \
+            -am package -DskipTests
+
+      - name: Start Order Management Application and run verification
+        shell: bash
+        run: |
+          set -e
+
+          APP_LOG="$RUNNER_TEMP/order-management.log"
+
+          mvn -B \
+            -pl 06-capstone-application/integration-between-spring-technologies \
+            org.springframework.boot:spring-boot-maven-plugin:run \
+            > "$APP_LOG" 2>&1 &
+
+          APP_PID=$!
+
+          cleanup() {
+            kill "$APP_PID" 2>/dev/null || true
+            wait "$APP_PID" 2>/dev/null || true
+          }
+
+          trap cleanup EXIT
+
+          echo "Waiting for the application to start..."
+
+          READY=false
+
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent \
+              http://localhost:8080/api/products \
+              | jq -e 'type == "array" and length > 0' > /dev/null; then
+              READY=true
+              break
+            fi
+
+            if ! kill -0 "$APP_PID" 2>/dev/null; then
+              echo "Application stopped unexpectedly."
+              cat "$APP_LOG"
+              exit 1
+            fi
+
+            sleep 2
+          done
+
+          if [ "$READY" != "true" ]; then
+            echo "Application did not become ready in time."
+            cat "$APP_LOG"
+            exit 1
+          fi
+
+          echo "Application is ready."
+
+          mvn -B \
+            -pl 06-capstone-application/end-to-end-application-verification \
+            -Dskip.e2e.tests=false \
+            test
+
+      - name: Upload application logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: order-management-application-logs
+          path: ${{ runner.temp }}/order-management.log

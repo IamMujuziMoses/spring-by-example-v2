@@ -152,7 +152,7 @@ The capstone should demonstrate:
 - [x] Modular Architecture with Spring Modulith
 - [x] Application Testing
 - [x] Integration Between Spring Technologies
-- 🚧 End-to-End Application Verification
+- [x] End-to-End Application Verification
 
 The application should remain understandable rather than becoming a large production system.
 
@@ -165,7 +165,7 @@ The application should remain understandable rather than becoming a large produc
 Planned topics:
 
 - 🚧 Jobs
-- ⬜ Steps
+- 🚧 Steps
 - ⬜ Job parameters
 - ⬜ Item readers
 - ⬜ Item processors
