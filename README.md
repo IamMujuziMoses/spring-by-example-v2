@@ -213,8 +213,7 @@ Combine concepts from the first five modules into a realistic, runnable Spring a
 
 Explore batch processing with Spring Batch.
 
-- Jobs
-- Steps
+- Jobs and Steps
 - Job parameters
 - Item readers
 - Item processors
