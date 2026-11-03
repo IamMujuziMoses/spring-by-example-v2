@@ -93,6 +93,9 @@
         <module>06-capstone-application/integration-between-spring-technologies</module>
         <module>06-capstone-application/end-to-end-application-verification</module>
 
+        <!--    07 Spring Batch        -->
+        <module>07-spring-batch/jobs-and-steps</module>
+
     </modules>
 
     <properties>
