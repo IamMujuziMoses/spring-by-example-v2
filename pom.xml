@@ -95,6 +95,7 @@
 
         <!--    07 Spring Batch        -->
         <module>07-spring-batch/jobs-and-steps</module>
+        <module>07-spring-batch/job-parameters</module>
 
     </modules>
 
