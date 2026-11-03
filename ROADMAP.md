@@ -166,9 +166,9 @@ Planned topics:
 
 - [x] Jobs and Steps
 - [x] Job parameters
-- 🚧 Item readers
+- [x] Item readers
 - 🚧 Item processors
-- ⬜ Item writers
+- 🚧 Item writers
 - ⬜ Chunk processing
 - ⬜ Tasklets
 - ⬜ Job execution
