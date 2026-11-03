@@ -165,9 +165,9 @@ The application should remain understandable rather than becoming a large produc
 Planned topics:
 
 - [x] Jobs and Steps
-- 🚧 Job parameters
+- [x] Job parameters
 - 🚧 Item readers
-- ⬜ Item processors
+- 🚧 Item processors
 - ⬜ Item writers
 - ⬜ Chunk processing
 - ⬜ Tasklets
