@@ -97,6 +97,7 @@
         <module>07-spring-batch/jobs-and-steps</module>
         <module>07-spring-batch/job-parameters</module>
         <module>07-spring-batch/item-readers</module>
+        <module>07-spring-batch/item-processors</module>
 
     </modules>
 
