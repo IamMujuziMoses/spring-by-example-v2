@@ -168,9 +168,9 @@ Planned topics:
 - [x] Job parameters
 - [x] Item readers
 - [x] Item processors
-- 🚧 Item writers
+- [x] Item writers
 - 🚧 Chunk processing
-- ⬜ Tasklets
+- 🚧 Tasklets
 - ⬜ Job execution
 - ⬜ Restartability
 - ⬜ Skip and retry
