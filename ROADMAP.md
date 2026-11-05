@@ -170,9 +170,9 @@ Planned topics:
 - [x] Item processors
 - [x] Item writers
 - [x] Chunk processing
-- 🚧 Tasklets
+- [x] Tasklets
 - 🚧 Job execution
-- ⬜ Restartability
+- 🚧 Restartability
 - ⬜ Skip and retry
 - ⬜ Batch testing
 
