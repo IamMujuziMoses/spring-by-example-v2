@@ -101,6 +101,7 @@
         <module>07-spring-batch/item-writers</module>
         <module>07-spring-batch/chunk-processing</module>
         <module>07-spring-batch/tasklet-processing</module>
+        <module>07-spring-batch/job-execution</module>
 
     </modules>
 
