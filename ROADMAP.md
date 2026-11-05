@@ -171,9 +171,9 @@ Planned topics:
 - [x] Item writers
 - [x] Chunk processing
 - [x] Tasklets
-- 🚧 Job execution
+- [x] Job execution
 - 🚧 Restartability
-- ⬜ Skip and retry
+- 🚧 Skip and retry
 - ⬜ Batch testing
 
 ---
