@@ -173,7 +173,7 @@ Planned topics:
 - [x] Tasklets
 - [x] Job execution
 - [x] Restartability
-- 🚧 Skip and retry
+- [x] Skip and retry
 - 🚧 Batch testing
 
 ---
@@ -184,7 +184,7 @@ Planned topics:
 
 Planned topics:
 
-- ⬜ Message channels
+- 🚧 Message channels
 - ⬜ Message endpoints
 - ⬜ Message handlers
 - ⬜ Transformers
