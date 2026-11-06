@@ -174,7 +174,7 @@ Planned topics:
 - [x] Job execution
 - [x] Restartability
 - [x] Skip and retry
-- 🚧 Batch testing
+- [x] Batch testing
 
 ---
 
@@ -185,7 +185,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Message channels
-- ⬜ Message endpoints
+- 🚧 Message endpoints
 - ⬜ Message handlers
 - ⬜ Transformers
 - ⬜ Filters
