@@ -172,9 +172,9 @@ Planned topics:
 - [x] Chunk processing
 - [x] Tasklets
 - [x] Job execution
-- 🚧 Restartability
+- [x] Restartability
 - 🚧 Skip and retry
-- ⬜ Batch testing
+- 🚧 Batch testing
 
 ---
 
