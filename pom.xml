@@ -103,6 +103,7 @@
         <module>07-spring-batch/tasklet-processing</module>
         <module>07-spring-batch/job-execution</module>
         <module>07-spring-batch/restartability</module>
+        <module>07-spring-batch/skip-and-retry</module>
 
     </modules>
 
