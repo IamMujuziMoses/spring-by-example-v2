@@ -17,6 +17,11 @@ jobs:
       pull-requests: write
       checks: write
 
+    env:
+      MAVEN_OPTS: >-
+        -Xms512m
+        -Xmx4g
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -29,7 +34,7 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        run: mvn clean verify
+        run: mvn -T 1C verify
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v7

@@ -27,8 +27,8 @@ Examples should be focused enough to understand individually while collectively 
 | 04 - Spring Modulith      | [x] Completed  |
 | 05 - Spring Testing       | [x] Completed  |
 | 06 - Capstone Application | [x] Completed  |
-| 07 - Spring Batch         | 🚧 In Progress |
-| 08 - Spring Integration   | ⬜ Planned      |
+| 07 - Spring Batch         | [x] Completed  |
+| 08 - Spring Integration   | 🚧 In Progress |
 | 09 - Spring Cloud         | ⬜ Planned      |
 | 10 - Spring AI            | ⬜ Planned      |
 | 11 - GraalVM Native       | ⬜ Planned      |
