@@ -4,7 +4,15 @@ stages:
   - build
 
 variables:
-  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  MAVEN_OPTS: >-
+    -Xms512m
+    -Xmx4g
+    -Dmaven.repo.local=.m2/repository
+
+cache:
+  key: maven
+  paths:
+    - .m2/repository/
 
 maven-build:
   stage: build
@@ -13,4 +21,4 @@ maven-build:
   script:
     - java -version
     - mvn -version
-    - mvn clean verify
+    - mvn -T 1C verify
