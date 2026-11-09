@@ -33,8 +33,16 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Cache Maven build outputs
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/build-cache
+          key: maven-build-cache-${{ runner.os }}-java-21-${{ github.sha }}
+          restore-keys: |
+            maven-build-cache-${{ runner.os }}-java-21-
+
       - name: Build with Maven
-        run: mvn -T 1C verify
+        run: mvn -B verify
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v7
