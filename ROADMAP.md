@@ -186,9 +186,9 @@ Planned topics:
 
 - [x] Message channels
 - [x] Message endpoints
-- 🚧 Message handlers
+- [x] Message handlers
 - 🚧 Transformers
-- ⬜ Filters
+- 🚧 Filters
 - ⬜ Routers
 - ⬜ Service activators
 - ⬜ Gateways

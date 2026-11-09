@@ -109,6 +109,7 @@
         <!--    08 Spring Integration  -->
         <module>08-spring-integration/message-channels</module>
         <module>08-spring-integration/message-endpoints</module>
+        <module>08-spring-integration/message-handlers</module>
 
     </modules>
 
