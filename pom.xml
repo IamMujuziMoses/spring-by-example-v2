@@ -110,6 +110,7 @@
         <module>08-spring-integration/message-channels</module>
         <module>08-spring-integration/message-endpoints</module>
         <module>08-spring-integration/message-handlers</module>
+        <module>08-spring-integration/transformers</module>
 
     </modules>
 
