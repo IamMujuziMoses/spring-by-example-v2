@@ -189,9 +189,9 @@ Planned topics:
 - [x] Message handlers
 - [x] Transformers
 - [x] Filters
-- 🚧 Routers
+- [x] Routers
 - 🚧 Service activators
-- ⬜ Gateways
+- 🚧 Gateways
 - ⬜ Adapters
 - ⬜ Error channels
 - ⬜ Integration testing
