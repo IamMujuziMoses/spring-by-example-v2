@@ -112,6 +112,7 @@
         <module>08-spring-integration/message-handlers</module>
         <module>08-spring-integration/transformers</module>
         <module>08-spring-integration/filters</module>
+        <module>08-spring-integration/routers</module>
 
     </modules>
 
