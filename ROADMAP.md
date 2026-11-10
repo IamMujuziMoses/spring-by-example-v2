@@ -190,9 +190,9 @@ Planned topics:
 - [x] Transformers
 - [x] Filters
 - [x] Routers
-- 🚧 Service activators
+- [x] Service activators
 - 🚧 Gateways
-- ⬜ Adapters
+- 🚧 Adapters
 - ⬜ Error channels
 - ⬜ Integration testing
 
