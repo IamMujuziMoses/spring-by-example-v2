@@ -193,7 +193,7 @@ Planned topics:
 - [x] Service activators
 - [x] Gateways
 - [x] Adapters
-- 🚧 Error channels
+- [x] Error channels
 - 🚧 Integration testing
 
 ---
@@ -204,7 +204,7 @@ Planned topics:
 
 Planned topics:
 
-- ⬜ Service discovery
+- 🚧 Service discovery
 - ⬜ Configuration management
 - ⬜ API gateways
 - ⬜ Load balancing

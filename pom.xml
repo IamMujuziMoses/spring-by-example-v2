@@ -116,6 +116,7 @@
         <module>08-spring-integration/service-activators</module>
         <module>08-spring-integration/gateways</module>
         <module>08-spring-integration/channel-adapters</module>
+        <module>08-spring-integration/error-channels</module>
 
     </modules>
 
