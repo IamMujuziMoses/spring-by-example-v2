@@ -191,9 +191,9 @@ Planned topics:
 - [x] Filters
 - [x] Routers
 - [x] Service activators
-- 🚧 Gateways
+- [x] Gateways
 - 🚧 Adapters
-- ⬜ Error channels
+- 🚧 Error channels
 - ⬜ Integration testing
 
 ---
