@@ -42,7 +42,30 @@ jobs:
             maven-build-cache-${{ runner.os }}-java-21-
 
       - name: Build with Maven
-        run: mvn -B verify
+        run: mvn -B clean verify
+
+      - name: Inspect JaCoCo reports
+        if: always()
+        run: |
+          echo "===== JaCoCo Execution Data ====="
+
+          find . -type f -name "jacoco.exec" -print
+
+          echo "===== JaCoCo Execution Data Count ====="
+
+          find . -type f -name "jacoco.exec" | wc -l
+
+          echo "===== JaCoCo XML Reports ====="
+
+          find . -type f \
+            -path "*/target/site/jacoco/jacoco.xml" \
+            -print
+
+          echo "===== JaCoCo XML Report Count ====="
+
+          find . -type f \
+            -path "*/target/site/jacoco/jacoco.xml" \
+            | wc -l
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v7
