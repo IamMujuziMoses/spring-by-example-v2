@@ -192,9 +192,9 @@ Planned topics:
 - [x] Routers
 - [x] Service activators
 - [x] Gateways
-- 🚧 Adapters
+- [x] Adapters
 - 🚧 Error channels
-- ⬜ Integration testing
+- 🚧 Integration testing
 
 ---
 
