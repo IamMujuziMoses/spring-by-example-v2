@@ -114,6 +114,7 @@
         <module>08-spring-integration/filters</module>
         <module>08-spring-integration/routers</module>
         <module>08-spring-integration/service-activators</module>
+        <module>08-spring-integration/gateways</module>
 
     </modules>
 
