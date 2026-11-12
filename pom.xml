@@ -117,6 +117,7 @@
         <module>08-spring-integration/gateways</module>
         <module>08-spring-integration/channel-adapters</module>
         <module>08-spring-integration/error-channels</module>
+        <module>08-spring-integration/integration-testing</module>
 
     </modules>
 
@@ -130,6 +131,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
+        <maven.compiler.version>3.16.0</maven.compiler.version>
+        <maven.checkstyle.puppycrawl>10.21.0</maven.checkstyle.puppycrawl>
+        <maven.checkstyle.version>3.6.0</maven.checkstyle.version>
+        <maven.jacoco.version>0.8.16</maven.jacoco.version>
         <skipTestcontainersTests>true</skipTestcontainersTests>
         <skip.e2e.tests>true</skip.e2e.tests>
     </properties>
@@ -179,7 +184,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.16.0</version>
+                    <version>${maven.compiler.version}</version>
 
                     <configuration>
                         <release>${java.version}</release>
@@ -190,7 +195,15 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.6.0</version>
+                    <version>${maven.checkstyle.version}</version>
+
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>${maven.checkstyle.puppycrawl}</version>
+                        </dependency>
+                    </dependencies>
 
                     <configuration>
                         <configLocation>
@@ -226,7 +239,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.16</version>
+                <version>${maven.jacoco.version}</version>
 
                 <configuration>
                     <excludes>
