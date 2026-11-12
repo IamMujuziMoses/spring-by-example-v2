@@ -19,7 +19,7 @@ V2 moves outward into the broader Spring ecosystem and focuses on technologies c
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=coveralls&logoColor=yellow)
 [![Maven Build](https://img.shields.io/github/actions/workflow/status/IamMujuziMoses/spring-by-example-v2/maven.yml?style=for-the-badge&label=Maven%20Build&logo=apachemaven&logoColor=green)](https://github.com/IamMujuziMoses/spring-by-example-v2/actions/workflows/maven.yml)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue?style=for-the-badge&logo=github&logoColor=blue)
-![Module Completion](https://img.shields.io/badge/Module%20Completion-58.33%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
+![Module Completion](https://img.shields.io/badge/Module%20Completion-66.67%25-indigo?style=for-the-badge&logo=ticktick&logoColor=indigo)
 [![Codecov](https://img.shields.io/codecov/c/github/IamMujuziMoses/spring-by-example-v2?style=for-the-badge&label=Codecov&logo=codecov&logoColor=violet&color=violet)](https://codecov.io/gh/IamMujuziMoses/spring-by-example-v2)
 
 ---
@@ -61,8 +61,8 @@ Each example should be:
 | 05     | Spring Testing       | [x] Completed  |
 | 06     | Capstone Application | [x] Completed  |
 | 07     | Spring Batch         | [x] Completed  |
-| 08     | Spring Integration   | 🚧 In Progress |
-| 09     | Spring Cloud         | ⬜  Planned     |
+| 08     | Spring Integration   | [x] Completed  |
+| 09     | Spring Cloud         | 🚧 In Progress |
 | 10     | Spring AI            | ⬜  Planned     |
 | 11     | GraalVM Native       | ⬜  Planned     |
 | 12     | Kotlin               | ⬜  Planned     |
@@ -227,7 +227,7 @@ Explore batch processing with Spring Batch.
 
 ---
 
-### Module 08 — Spring Integration 🚧
+### Module 08 — Spring Integration ✅
 
 Explore enterprise integration patterns.
 
@@ -245,7 +245,7 @@ Explore enterprise integration patterns.
 
 ---
 
-### Module 09 — Spring Cloud
+### Module 09 — Spring Cloud 🚧
 
 Explore distributed application patterns using Spring Cloud.
 
