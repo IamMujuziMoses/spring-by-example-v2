@@ -194,7 +194,7 @@ Planned topics:
 - [x] Gateways
 - [x] Adapters
 - [x] Error channels
-- 🚧 Integration testing
+- [x] Integration testing
 
 ---
 
@@ -205,7 +205,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Service discovery
-- ⬜ Configuration management
+- 🚧 Configuration management
 - ⬜ API gateways
 - ⬜ Load balancing
 - ⬜ Resilience
