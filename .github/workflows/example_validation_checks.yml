@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate-readmes:
-    name: Validate Example READMEs
+    name: Validate Repository and Example READMEs
     runs-on: ubuntu-latest
 
     steps:
@@ -22,32 +22,14 @@ jobs:
 
           failed=0
 
-          while IFS= read -r -d '' java_file; do
-            example_dir=""
-
-            # Find the example directory containing this Java file.
-            current_dir="$(dirname "$java_file")"
-
-            while [[ "$current_dir" != "." && "$current_dir" != "/" ]]; do
-              if [[ -d "$current_dir/src" ]]; then
-                example_dir="$current_dir"
-                break
-              fi
-
-              current_dir="$(dirname "$current_dir")"
-            done
-
-            if [[ -z "$example_dir" ]]; then
-              continue
-            fi
-
-            readme="$example_dir/README.md"
+          validate_readme() {
+            local readme="$1"
 
             if [[ ! -f "$readme" ]]; then
               echo "::error file=$readme::Missing README.md"
-              echo "Missing README: $example_dir"
+              echo "Missing README: $readme"
               failed=1
-              continue
+              return
             fi
 
             if [[ -z "$(tr -d '[:space:]' < "$readme")" ]]; then
@@ -55,11 +37,42 @@ jobs:
               echo "Empty README: $readme"
               failed=1
             fi
+          }
+
+          # Validate the repository-level README.
+          validate_readme "./README.md"
+
+          # Find Maven projects that are not nested inside another Maven project.
+          while IFS= read -r -d '' pom_file; do
+            example_dir="$(dirname "$pom_file")"
+
+            # Exclude the repository root.
+            if [[ "$example_dir" == "." ]]; then
+              continue
+            fi
+
+            parent_dir="$(dirname "$example_dir")"
+
+            # Ignore nested Maven modules.
+            if [[ -f "$parent_dir/pom.xml" ]]; then
+              continue
+            fi
+
+            # Only validate directories containing Java source files.
+            if ! find "$example_dir" \
+                -type f \
+                -name "*.java" \
+                -not -path "*/target/*" \
+                -print -quit | grep -q .; then
+              continue
+            fi
+
+            validate_readme "$example_dir/README.md"
 
           done < <(
             find . \
               -type f \
-              -name "*.java" \
+              -name "pom.xml" \
               -not -path "./.git/*" \
               -not -path "*/target/*" \
               -print0
