@@ -1,0 +1,5 @@
+app:
+  order:
+    message: Orders are processed using centralized configuration.
+    max-items: 10
+    expedited-enabled: false

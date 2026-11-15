@@ -1,0 +1,5 @@
+app:
+  order:
+    message: Orders are processed using the development configuration.
+    max-items: 25
+    expedited-enabled: true
