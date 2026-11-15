@@ -121,6 +121,7 @@
 
         <!--    09 Spring Cloud        -->
         <module>09-spring-cloud/service-discovery</module>
+        <module>09-spring-cloud/configuration-management</module>
 
     </modules>
 
