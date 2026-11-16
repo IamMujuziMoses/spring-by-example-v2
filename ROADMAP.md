@@ -206,9 +206,9 @@ Planned topics:
 
 - [x] Service discovery
 - [x] Configuration management
-- 🚧 API gateways
+- [x] API gateways
 - 🚧 Load balancing
-- ⬜ Resilience
+- 🚧 Resilience
 - ⬜ Distributed tracing
 - ⬜ Declarative HTTP clients
 - ⬜ Messaging

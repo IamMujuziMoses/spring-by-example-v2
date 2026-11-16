@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ag-gateway-server
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: order-service
+              uri: ${services.order.url:http://localhost:8081}
+              predicates:
+                - Path=/api/orders/**
+              filters:
+                - StripPrefix=1
+                - AddResponseHeader=X-Gateway-Route,orders
+
+            - id: inventory-service
+              uri: ${services.inventory.url:http://localhost:8082}
+              predicates:
+                - Path=/api/inventory/**
+              filters:
+                - StripPrefix=1
+                - AddResponseHeader=X-Gateway-Route,inventory
