@@ -34,7 +34,7 @@ jobs:
           cache: maven
 
       - name: Cache Maven build outputs
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.m2/build-cache
           key: maven-build-cache-${{ runner.os }}-java-21-${{ github.sha }}
