@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: lb-order-client
+
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            lb-order-service:
+              - uri: http://localhost:8081
+              - uri: http://localhost:8082
