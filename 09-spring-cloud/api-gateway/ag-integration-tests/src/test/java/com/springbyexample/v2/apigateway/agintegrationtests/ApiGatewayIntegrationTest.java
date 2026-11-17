@@ -123,6 +123,15 @@ public class ApiGatewayIntegrationTest {
         Path gatewayDirectory = Path.of("../ag-gateway-server").toAbsolutePath().normalize();
         Path gatewayClasses = gatewayDirectory.resolve("target/classes");
         Path gatewayClasspathFile = gatewayDirectory.resolve("target/gateway-classpath.txt");
+
+        if (!Files.isDirectory(gatewayClasses)) {
+            throw new IllegalStateException("Gateway classes directory does not exist: " + gatewayClasses);
+        }
+
+        if (!Files.isRegularFile(gatewayClasspathFile)) {
+            throw new IllegalStateException("Gateway classpath file does not exist: " + gatewayClasspathFile);
+        }
+
         String gatewayClasspath = gatewayClasses + File.pathSeparator + Files.readString(gatewayClasspathFile).trim();
         String javaExecutable = Path.of(System.getProperty("java.home"), "bin", "java").toString();
 
