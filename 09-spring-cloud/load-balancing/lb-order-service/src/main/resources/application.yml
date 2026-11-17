@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: lb-order-service
+
+app:
+  instance-id: ${INSTANCE_ID:order-service}

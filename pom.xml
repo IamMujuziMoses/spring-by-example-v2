@@ -123,6 +123,7 @@
         <module>09-spring-cloud/service-discovery</module>
         <module>09-spring-cloud/configuration-management</module>
         <module>09-spring-cloud/api-gateway</module>
+        <module>09-spring-cloud/load-balancing</module>
 
     </modules>
 
