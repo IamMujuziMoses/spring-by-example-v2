@@ -208,9 +208,9 @@ Planned topics:
 - [x] Configuration management
 - [x] API gateways
 - [x] Load balancing
-- [x] Resilience
+- 🚧 Resilience
 - 🚧 Distributed tracing
-- 🚧 Declarative HTTP clients
+- ⬜ Declarative HTTP clients
 - ⬜ Messaging
 - ⬜ Cloud-native configuration
 

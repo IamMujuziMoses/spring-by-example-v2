@@ -1,9 +1,0 @@
-server:
-  port: 8081
-
-spring:
-  application:
-    name: resilience-order-service
-
-app:
-  instance-id: ${INSTANCE_ID:order-service}
