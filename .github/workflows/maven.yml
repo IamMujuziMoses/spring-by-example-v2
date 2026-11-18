@@ -42,7 +42,16 @@ jobs:
             maven-build-cache-${{ runner.os }}-java-21-
 
       - name: Build with Maven
-        run: mvn -B clean verify
+        run: |
+          # Build all examples except API Gateway, using Maven build cache.
+          mvn -B clean verify \
+            -pl '!09-spring-cloud/api-gateway/ag-gateway-server,!09-spring-cloud/api-gateway/ag-order-service,!09-spring-cloud/api-gateway/ag-inventory-service,!09-spring-cloud/api-gateway/ag-integration-tests'
+
+          # Build API Gateway and its required modules without build cache.
+          mvn -B clean verify \
+            -pl 09-spring-cloud/api-gateway/ag-gateway-server,09-spring-cloud/api-gateway/ag-integration-tests \
+            -am \
+            -Dmaven.build.cache.enabled=false
 
       - name: Inspect JaCoCo reports
         if: always()
@@ -58,25 +67,55 @@ jobs:
           echo "===== JaCoCo XML Reports ====="
 
           find . -type f \
-            -path "*/target/site/jacoco/jacoco.xml" \
+            \( -path "*/target/site/jacoco/jacoco.xml" \
+            -o -path "*/target/site/jacoco-aggregate/jacoco.xml" \) \
             -print
 
           echo "===== JaCoCo XML Report Count ====="
 
           find . -type f \
-            -path "*/target/site/jacoco/jacoco.xml" \
+            \( -path "*/target/site/jacoco/jacoco.xml" \
+            -o -path "*/target/site/jacoco-aggregate/jacoco.xml" \) \
             | wc -l
 
+      - name: Discover JaCoCo reports
+        id: jacoco
+        if: success()
+        run: |
+          REPORTS=$(find . -type f \
+            \( -path "*/target/site/jacoco/jacoco.xml" \
+            -o -path "*/target/site/jacoco-aggregate/jacoco.xml" \) \
+            -print | sort | paste -sd, -)
+
+          if [ -z "$REPORTS" ]; then
+            echo "::error::No JaCoCo XML reports were generated."
+            exit 1
+          fi
+
+          echo "Discovered JaCoCo reports:"
+          echo "$REPORTS" | tr ',' '\n'
+
+          echo "files=$REPORTS" >> "$GITHUB_OUTPUT"
+
       - name: Upload coverage to Codecov
+        if: success()
         uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: ${{ steps.jacoco.outputs.files }}
+          disable_search: true
+          fail_ci_if_error: true
+          verbose: true
 
       - name: Print application logs on failure
         if: failure()
         run: |
           echo "===== Order Management Application Logs ====="
-          cat "$RUNNER_TEMP/order-management.log"
+          if [ -f "$RUNNER_TEMP/order-management.log" ]; then
+            cat "$RUNNER_TEMP/order-management.log"
+          else
+            echo "Application log file was not found."
+          fi
 
       - name: Upload application logs on failure
         if: failure()
@@ -84,3 +123,4 @@ jobs:
         with:
           name: order-management-application-logs
           path: ${{ runner.temp }}/order-management.log
+          if-no-files-found: ignore
