@@ -124,6 +124,7 @@
         <module>09-spring-cloud/configuration-management</module>
         <module>09-spring-cloud/api-gateway</module>
         <module>09-spring-cloud/load-balancing</module>
+        <module>09-spring-cloud/resilience</module>
 
     </modules>
 
