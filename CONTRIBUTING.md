@@ -267,7 +267,7 @@ mvn clean verify -DskipTestcontainersTests=false
 or running only the `Testcontainers` module tests
 
 ```bash
-mvn -pl 05-spring-testing/testcontainers -am clean verify -DskipTestcontainersTests=false
+mvn -pl 05-spring-testing/spring-test-containers -am clean verify -DskipTestcontainersTests=false
 ```
 
 When modifying Docker-dependent examples, contributors should run the relevant tests with Docker available before submitting their changes.

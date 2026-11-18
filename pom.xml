@@ -125,6 +125,7 @@
         <module>09-spring-cloud/api-gateway</module>
         <module>09-spring-cloud/load-balancing</module>
         <module>09-spring-cloud/resilience</module>
+        <module>09-spring-cloud/distributed-tracing</module>
 
     </modules>
 

@@ -209,9 +209,9 @@ Planned topics:
 - [x] API gateways
 - [x] Load balancing
 - [x] Resilience
-- 🚧 Distributed tracing
+- [x] Distributed tracing
 - 🚧 Declarative HTTP clients
-- ⬜ Messaging
+- 🚧 Messaging
 - ⬜ Cloud-native configuration
 
 The exact technology choices will be evaluated when this module begins.

@@ -470,7 +470,7 @@ In a CI/CD environment, the test runner must also have access to a compatible co
 From the repository root, run:
 
 ```bash
-mvn -pl 05-spring-testing/testcontainers spring-boot:run
+mvn -pl 05-spring-testing/spring-test-containers spring-boot:run
 ```
 
 This starts the application, but the application also needs a configured PostgreSQL datasource. The Testcontainers configuration in this example is intended for the test lifecycle, so running the application independently requires an appropriate database configuration.
@@ -506,7 +506,7 @@ mvn clean verify -DskipTestcontainersTests=false
 or running only the `Testcontainers` module tests
 
 ```bash
-mvn -pl 05-spring-testing/testcontainers -am clean verify -DskipTestcontainersTests=false
+mvn -pl 05-spring-testing/spring-test-containers -am clean verify -DskipTestcontainersTests=false
 ```
 
 The `skipTestcontainersTests` property controls whether this module's tests are executed. Setting it to `false` enables the tests.
