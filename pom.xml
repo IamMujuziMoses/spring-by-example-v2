@@ -126,6 +126,7 @@
         <module>09-spring-cloud/load-balancing</module>
         <module>09-spring-cloud/resilience</module>
         <module>09-spring-cloud/distributed-tracing</module>
+        <module>09-spring-cloud/declarative-http-clients</module>
 
     </modules>
 

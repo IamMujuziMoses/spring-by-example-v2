@@ -210,9 +210,9 @@ Planned topics:
 - [x] Load balancing
 - [x] Resilience
 - [x] Distributed tracing
-- 🚧 Declarative HTTP clients
+- [x] Declarative HTTP clients
 - 🚧 Messaging
-- ⬜ Cloud-native configuration
+- 🚧 Cloud-native configuration
 
 The exact technology choices will be evaluated when this module begins.
 
