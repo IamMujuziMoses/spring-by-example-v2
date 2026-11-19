@@ -211,7 +211,7 @@ Planned topics:
 - [x] Resilience
 - [x] Distributed tracing
 - [x] Declarative HTTP clients
-- 🚧 Messaging
+- [x] Messaging
 - 🚧 Cloud-native configuration
 
 The exact technology choices will be evaluated when this module begins.
@@ -224,7 +224,7 @@ The exact technology choices will be evaluated when this module begins.
 
 Planned topics:
 
-- ⬜ Spring AI fundamentals
+- 🚧 Spring AI fundamentals
 - ⬜ Chat models
 - ⬜ Prompt templates
 - ⬜ Structured output

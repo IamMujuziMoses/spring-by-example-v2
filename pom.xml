@@ -127,10 +127,12 @@
         <module>09-spring-cloud/resilience</module>
         <module>09-spring-cloud/distributed-tracing</module>
         <module>09-spring-cloud/declarative-http-clients</module>
+        <module>09-spring-cloud/messaging</module>
 
     </modules>
 
     <properties>
+
         <java.version>21</java.version>
         <spring-boot.version>4.1.2</spring-boot.version>
         <spring-modulith.version>2.1.2</spring-modulith.version>
@@ -146,6 +148,7 @@
         <maven.jacoco.version>0.8.16</maven.jacoco.version>
         <skipTestcontainersTests>true</skipTestcontainersTests>
         <skip.e2e.tests>true</skip.e2e.tests>
+
     </properties>
 
     <dependencyManagement>
