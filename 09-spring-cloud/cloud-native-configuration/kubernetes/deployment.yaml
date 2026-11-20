@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-native-config-client
+  namespace: cloud-native-configuration
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud-native-config-client
+  template:
+    metadata:
+      labels:
+        app: cloud-native-config-client
+    spec:
+      serviceAccountName: cloud-native-config-client
+      containers:
+        - name: cloud-native-config-client
+          image: cloud-native-config-client:1.0-SNAPSHOT
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP

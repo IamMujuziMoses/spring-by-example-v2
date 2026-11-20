@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloud-native-config-client
+  namespace: cloud-native-configuration
+data:
+  app.name: Cloud Native Configuration Demo
+  app.environment: kubernetes
+  app.feature-enabled: "true"

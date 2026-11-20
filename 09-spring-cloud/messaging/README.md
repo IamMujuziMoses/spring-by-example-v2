@@ -1218,27 +1218,73 @@ It therefore verifies that the two services can communicate through the configur
 
 ## Running the Tests
 
-Run the integration tests from the repository root:
+This example uses `Testcontainers` to start a `RabbitMQ` container for integration testing.
+
+Docker must be installed and running for the integration test to execute.
+
+### Running Without Docker
+
+The `MessagingIntegrationTest` class is skipped by default so that the repository's Maven build can run without requiring Docker.
+
+From the repository root:
 
 ```bash
-mvn -pl 09-spring-cloud/messaging/msg-integration-tests -am clean verify
+mvn clean verify
 ```
 
-To run only the messaging integration test:
+### Running With Docker
+
+Start Docker, then execute:
 
 ```bash
-mvn -pl 09-spring-cloud/messaging/msg-integration-tests -am \
-    -Dtest=MessagingIntegrationTest \
-    -Dsurefire.failIfNoSpecifiedTests=false \
-    test
+mvn clean verify -DskipMessagingIntegrationTest=false
 ```
 
-The integration tests require Docker to be available because Testcontainers starts a RabbitMQ container.
-
-To run the tests across the complete messaging module:
+Or run only the Spring Cloud Messaging example:
 
 ```bash
-mvn -pl 09-spring-cloud/messaging -am clean verify
+mvn -pl 09-spring-cloud/messaging/msg-integration-tests -am clean verify -DskipMessagingIntegrationTest=false
+```
+
+The `skipMessagingIntegrationTest` property controls whether the `MessagingIntegrationTest` class is executed. It defaults to `true`, which skips the integration test. Setting it to `false` enables the test.
+
+During execution, Testcontainers starts RabbitMQ, the Order Service and Inventory Service connect to the containerized message broker, and the integration test verifies asynchronous event delivery and inventory updates.
+
+The container lifecycle is managed by Testcontainers and its JUnit integration.
+
+> **Note:** Skipping this test does not verify RabbitMQ integration or asynchronous communication between the services. Run it with Docker before submitting changes that affect this example.
+
+The expected lifecycle is:
+
+```text
+Run Tests
+    │
+    ▼
+Start RabbitMQ Container
+    │
+    ▼
+Initialize Inventory Service
+    │
+    ▼
+Initialize Order Service
+    │
+    ▼
+Submit Order
+    │
+    ▼
+Publish Order Created Event
+    │
+    ▼
+Consume Event and Update Inventory
+    │
+    ▼
+Verify Inventory Update
+    │
+    ▼
+Stop RabbitMQ Container
+    │
+    ▼
+Test Execution Complete
 ```
 
 ---

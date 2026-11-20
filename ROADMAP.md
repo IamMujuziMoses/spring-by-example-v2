@@ -212,7 +212,7 @@ Planned topics:
 - [x] Distributed tracing
 - [x] Declarative HTTP clients
 - [x] Messaging
-- 🚧 Cloud-native configuration
+- [x] Cloud-native configuration
 
 The exact technology choices will be evaluated when this module begins.
 
@@ -225,7 +225,7 @@ The exact technology choices will be evaluated when this module begins.
 Planned topics:
 
 - 🚧 Spring AI fundamentals
-- ⬜ Chat models
+- 🚧 Chat models
 - ⬜ Prompt templates
 - ⬜ Structured output
 - ⬜ Embeddings
