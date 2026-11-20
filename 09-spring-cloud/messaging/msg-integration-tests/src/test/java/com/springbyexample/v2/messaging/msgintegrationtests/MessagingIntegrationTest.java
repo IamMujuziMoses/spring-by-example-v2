@@ -8,6 +8,7 @@ import java.time.Duration;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -29,8 +30,8 @@ import com.springbyexample.v2.messaging.msgorderservice.model.OrderRequest;
  *
  * @author Mujuzi Moses
  */
-
 @Testcontainers
+@EnabledIfSystemProperty(named = "skipMessagingIntegrationTest", matches = "false")
 public class MessagingIntegrationTest {
 
     private static final String PRODUCT_ID = "SKU-1001";

@@ -128,6 +128,7 @@
         <module>09-spring-cloud/distributed-tracing</module>
         <module>09-spring-cloud/declarative-http-clients</module>
         <module>09-spring-cloud/messaging</module>
+        <module>09-spring-cloud/cloud-native-configuration</module>
 
     </modules>
 
@@ -147,7 +148,10 @@
         <maven.checkstyle.version>3.6.0</maven.checkstyle.version>
         <maven.jacoco.version>0.8.16</maven.jacoco.version>
         <skipTestcontainersTests>true</skipTestcontainersTests>
+        <skipMessagingIntegrationTest>true</skipMessagingIntegrationTest>
         <skip.e2e.tests>true</skip.e2e.tests>
+        <skipCloudNativeConfigurationITs>true</skipCloudNativeConfigurationITs>
+        <cloudNativeConfigurationBaseUrl>http://localhost:8080</cloudNativeConfigurationBaseUrl>
 
     </properties>
 

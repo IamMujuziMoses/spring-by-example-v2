@@ -256,18 +256,48 @@ mvn clean verify
 
 Some examples use `Testcontainers` to run integration tests against containerized services.
 
-These tests may require Docker to be installed and running. The `Testcontainers` module skips its tests by default so contributors can build the repository without Docker.
+These tests may require Docker to be installed and running. Docker-dependent tests are skipped by default so contributors can build the repository without Docker.
 
-To include the `Testcontainers` tests, start Docker and execute:
+#### Spring Testcontainers Example
+
+To include the `spring-test-containers` example tests, start Docker and execute:
 
 ```bash
 mvn clean verify -DskipTestcontainersTests=false
 ```
 
-or running only the `Testcontainers` module tests
+Or run only the `spring-test-containers` example tests:
 
 ```bash
 mvn -pl 05-spring-testing/spring-test-containers -am clean verify -DskipTestcontainersTests=false
+```
+
+#### Spring Cloud Messaging Example
+
+The Spring Cloud Messaging example uses `Testcontainers` to start a `RabbitMQ` container for integration testing.
+
+The `MessagingIntegrationTest` class is skipped by default using the `skipMessagingIntegrationTest` property.
+
+To include the `MessagingIntegrationTest` class, start Docker and execute:
+
+```bash
+mvn clean verify -DskipMessagingIntegrationTest=false
+```
+
+Or run only the Spring Cloud Messaging example:
+
+```bash
+mvn -pl 09-spring-cloud/messaging/msg-integration-tests -am clean verify -DskipMessagingIntegrationTest=false
+```
+
+During execution, Testcontainers starts RabbitMQ, the Order Service and Inventory Service connect to the containerized message broker, and the integration test verifies asynchronous event delivery and inventory updates.
+
+#### Running All Docker-Dependent Tests
+
+To enable both the Spring Testcontainers tests and the Spring Cloud Messaging integration test during the complete Maven verification, start Docker and execute:
+
+```bash
+mvn clean verify -DskipTestcontainersTests=false -DskipMessagingIntegrationTest=false
 ```
 
 When modifying Docker-dependent examples, contributors should run the relevant tests with Docker available before submitting their changes.
@@ -305,6 +335,66 @@ The tests communicate with the running application through HTTP. Make sure the a
 When modifying end-to-end verification examples, contributors should start the corresponding application and run the relevant tests before submitting their changes.
 
 The dedicated GitHub Actions workflow automatically starts the Integration Between Spring Technologies application and executes the end-to-end verification tests.
+
+### Kubernetes-Dependent Tests
+
+Some examples use Kubernetes to provide external configuration, infrastructure, or application services.
+
+These tests require a running Kubernetes environment and may depend on deployed applications and Kubernetes resources.
+
+Kubernetes-dependent tests are skipped by default so contributors can run the regular Maven build without requiring a Kubernetes cluster.
+
+#### Spring Cloud-Native Configuration Example
+
+The Spring Cloud-Native Configuration example uses Spring Cloud Kubernetes to load external configuration from Kubernetes `ConfigMaps` and `Secrets`.
+
+The `KubernetesConfigurationIT` test verifies the application's effective configuration through HTTP requests to the deployed application.
+
+This test is skipped by default using the `skipCloudNativeConfigurationITs` Maven property.
+
+To include the Kubernetes integration test, start a Kubernetes cluster, deploy the example, and execute:
+
+```bash
+mvn clean verify -DskipCloudNativeConfigurationITs=false
+```
+
+Or run only the Cloud-Native Configuration example tests:
+
+```bash
+mvn -pl :cnc-integration-tests -am clean verify -DskipCloudNativeConfigurationITs=false
+```
+
+The Kubernetes cluster and application must already be running and accessible. For the local Kind setup, contributors should deploy the Kubernetes manifests and establish port forwarding:
+
+```bash
+kubectl port-forward -n cloud-native-configuration service/cloud-native-config-client 8080:8080
+```
+
+The application is expected to be available at:
+
+```text
+http://localhost:8080
+```
+
+During execution, the test sends an HTTP request to the application and verifies that configuration values loaded from the Kubernetes `ConfigMap` and `Secret` are correctly reflected in the application response.
+
+For a detailed explanation of the test configuration, execution modes, module responsibilities, and Kubernetes setup, see [Managing Kubernetes-Dependent Tests](09-spring-cloud/cloud-native-configuration/README.md#managing-kubernetes-dependent-tests).
+
+When modifying Kubernetes-dependent examples, contributors should deploy the relevant application and run the corresponding tests with Kubernetes available before submitting their changes.
+
+#### Running All Optional Infrastructure-Dependent Tests
+
+To enable the Spring Testcontainers tests, Spring Cloud Messaging integration test, and Cloud-Native Configuration Kubernetes integration test during the complete Maven verification, start Docker and ensure the required Kubernetes environment is available.
+
+Execute:
+
+```bash
+mvn clean verify -DskipTestcontainersTests=false -DskipMessagingIntegrationTest=false -DskipCloudNativeConfigurationITs=false
+```
+
+Each example may have additional infrastructure requirements. Ensure all required containers, services, and Kubernetes applications are running before executing the tests.
+
+---
 
 ### GitHub Actions
 

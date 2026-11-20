@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cloud-native-config-client
+
+  config:
+    import: "optional:kubernetes:"
+
+  cloud:
+    kubernetes:
+      secrets:
+        enabled: true
+        enable-api: true
+
+server:
+  port: 8080
