@@ -29,8 +29,8 @@ Examples should be focused enough to understand individually while collectively 
 | 06 - Capstone Application | [x] Completed  |
 | 07 - Spring Batch         | [x] Completed  |
 | 08 - Spring Integration   | [x] Completed  |
-| 09 - Spring Cloud         | 🚧 In Progress |
-| 10 - Spring AI            | ⬜ Planned      |
+| 09 - Spring Cloud         | [x] Completed  |
+| 10 - Spring AI            | 🚧 In Progress |
 | 11 - GraalVM Native       | ⬜ Planned      |
 | 12 - Kotlin               | ⬜ Planned      |
 
