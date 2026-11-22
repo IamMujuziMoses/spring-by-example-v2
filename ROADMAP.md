@@ -224,9 +224,9 @@ The exact technology choices will be evaluated when this module begins.
 
 Planned topics:
 
-- 🚧 Spring AI fundamentals
+- [x] Spring AI fundamentals
 - 🚧 Chat models
-- ⬜ Prompt templates
+- 🚧 Prompt templates
 - ⬜ Structured output
 - ⬜ Embeddings
 - ⬜ Vector stores
