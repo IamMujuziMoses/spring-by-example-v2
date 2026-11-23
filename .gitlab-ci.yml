@@ -7,12 +7,13 @@ variables:
   MAVEN_OPTS: >-
     -Xms512m
     -Xmx4g
-    -Dmaven.repo.local=.m2/repository
+    -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository
 
 cache:
   key: maven
   paths:
     - .m2/repository/
+  policy: pull-push
 
 maven-build:
   stage: build
@@ -21,4 +22,15 @@ maven-build:
   script:
     - java -version
     - mvn -version
-    - mvn -T 1C verify
+
+    # Build all examples except API Gateway, using Maven parallel execution and build cache.
+    - >
+      mvn -B clean verify
+      -pl '!09-spring-cloud/api-gateway/ag-gateway-server,!09-spring-cloud/api-gateway/ag-order-service,!09-spring-cloud/api-gateway/ag-inventory-service,!09-spring-cloud/api-gateway/ag-integration-tests'
+
+    # Build API Gateway and its required modules without build cache.
+    - >
+      mvn -B clean verify
+      -pl 09-spring-cloud/api-gateway/ag-gateway-server,09-spring-cloud/api-gateway/ag-integration-tests
+      -am
+      -Dmaven.build.cache.enabled=false
