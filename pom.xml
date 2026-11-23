@@ -134,6 +134,7 @@
         <module>10-spring-ai/spring-ai-fundamentals</module>
         <module>10-spring-ai/chat-models</module>
         <module>10-spring-ai/prompt-templates</module>
+        <module>10-spring-ai/structured-output</module>
 
     </modules>
 
