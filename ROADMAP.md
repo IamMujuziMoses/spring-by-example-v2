@@ -226,9 +226,9 @@ Planned topics:
 
 - [x] Spring AI fundamentals
 - [x] Chat models
-- 🚧 Prompt templates
+- [x] Prompt templates
 - 🚧 Structured output
-- ⬜ Embeddings
+- 🚧 Embeddings
 - ⬜ Vector stores
 - ⬜ Retrieval-Augmented Generation
 - ⬜ Tool calling
