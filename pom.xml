@@ -132,6 +132,7 @@
 
         <!--    10 Spring AI           -->
         <module>10-spring-ai/spring-ai-fundamentals</module>
+        <module>10-spring-ai/chat-models</module>
 
     </modules>
 
