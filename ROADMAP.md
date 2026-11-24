@@ -229,9 +229,9 @@ Planned topics:
 - [x] Prompt templates
 - [x] Structured output
 - [x] Embeddings
-- 🚧 Vector stores
+- [x] Vector stores
 - 🚧 Retrieval-Augmented Generation
-- ⬜ Tool calling
+- 🚧 Tool calling
 - ⬜ AI application testing
 - ⬜ Model provider integration
 
