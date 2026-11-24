@@ -136,6 +136,7 @@
         <module>10-spring-ai/prompt-templates</module>
         <module>10-spring-ai/structured-output</module>
         <module>10-spring-ai/embeddings</module>
+        <module>10-spring-ai/vector-stores</module>
 
     </modules>
 
