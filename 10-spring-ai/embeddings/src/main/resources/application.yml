@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: embeddings
+  ai:
+    model:
+      embedding: ollama
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        model: nomic-embed-text
+
+server:
+  port: 8084
