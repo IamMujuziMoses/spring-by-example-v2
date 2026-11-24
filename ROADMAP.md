@@ -228,9 +228,9 @@ Planned topics:
 - [x] Chat models
 - [x] Prompt templates
 - [x] Structured output
-- 🚧 Embeddings
+- [x] Embeddings
 - 🚧 Vector stores
-- ⬜ Retrieval-Augmented Generation
+- 🚧 Retrieval-Augmented Generation
 - ⬜ Tool calling
 - ⬜ AI application testing
 - ⬜ Model provider integration
