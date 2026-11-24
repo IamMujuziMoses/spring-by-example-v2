@@ -230,9 +230,9 @@ Planned topics:
 - [x] Structured output
 - [x] Embeddings
 - [x] Vector stores
-- 🚧 Retrieval-Augmented Generation
+- [x] Retrieval-Augmented Generation
 - 🚧 Tool calling
-- ⬜ AI application testing
+- 🚧 AI application testing
 - ⬜ Model provider integration
 
 ---
