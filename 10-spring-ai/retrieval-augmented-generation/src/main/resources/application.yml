@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: rag
+
+  ai:
+    model:
+      chat: ollama
+      embedding: ollama
+
+    ollama:
+      base-url: http://localhost:11434
+
+      chat:
+        model: llama3.2
+        options:
+          temperature: 0.2
+
+      embedding:
+        model: nomic-embed-text
+
+server:
+  port: 8086
