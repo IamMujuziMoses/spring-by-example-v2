@@ -139,6 +139,7 @@
         <module>10-spring-ai/vector-stores</module>
         <module>10-spring-ai/retrieval-augmented-generation</module>
         <module>10-spring-ai/tool-calling</module>
+        <module>10-spring-ai/ai-application-testing</module>
 
     </modules>
 

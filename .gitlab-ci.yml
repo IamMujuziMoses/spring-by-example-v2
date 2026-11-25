@@ -27,10 +27,3 @@ maven-build:
     - >
       mvn -B clean verify
       -pl '!09-spring-cloud/api-gateway/ag-gateway-server,!09-spring-cloud/api-gateway/ag-order-service,!09-spring-cloud/api-gateway/ag-inventory-service,!09-spring-cloud/api-gateway/ag-integration-tests'
-
-    # Build API Gateway and its required modules without build cache.
-    - >
-      mvn -B clean verify
-      -pl 09-spring-cloud/api-gateway/ag-gateway-server,09-spring-cloud/api-gateway/ag-integration-tests
-      -am
-      -Dmaven.build.cache.enabled=false
