@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: model-provider-integration
+  profiles:
+    active: ${AI_PROVIDER:ollama}
+  ai:
+    model:
+      embedding: none
+      image: none
+      moderation: none
+      audio:
+        speech: none
+        transcription: none
+
+server:
+  port: 8089
