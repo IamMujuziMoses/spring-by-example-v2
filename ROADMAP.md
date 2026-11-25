@@ -231,9 +231,9 @@ Planned topics:
 - [x] Embeddings
 - [x] Vector stores
 - [x] Retrieval-Augmented Generation
-- 🚧 Tool calling
+- [x] Tool calling
 - 🚧 AI application testing
-- ⬜ Model provider integration
+- 🚧 Model provider integration
 
 ---
 
