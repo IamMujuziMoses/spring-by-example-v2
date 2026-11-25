@@ -232,7 +232,7 @@ Planned topics:
 - [x] Vector stores
 - [x] Retrieval-Augmented Generation
 - [x] Tool calling
-- 🚧 AI application testing
+- [x] AI application testing
 - 🚧 Model provider integration
 
 ---
@@ -243,7 +243,7 @@ Planned topics:
 
 Planned topics:
 
-- ⬜ Native executables
+- 🚧 Native executables
 - ⬜ Spring AOT
 - ⬜ Native image constraints
 - ⬜ Reflection
