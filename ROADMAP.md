@@ -233,7 +233,7 @@ Planned topics:
 - [x] Retrieval-Augmented Generation
 - [x] Tool calling
 - [x] AI application testing
-- 🚧 Model provider integration
+- [x] Model provider integration
 
 ---
 
@@ -244,7 +244,7 @@ Planned topics:
 Planned topics:
 
 - 🚧 Native executables
-- ⬜ Spring AOT
+- 🚧 Spring AOT
 - ⬜ Native image constraints
 - ⬜ Reflection
 - ⬜ Resource configuration

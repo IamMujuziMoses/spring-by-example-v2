@@ -140,6 +140,7 @@
         <module>10-spring-ai/retrieval-augmented-generation</module>
         <module>10-spring-ai/tool-calling</module>
         <module>10-spring-ai/ai-application-testing</module>
+        <module>10-spring-ai/model-provider-integration</module>
 
     </modules>
 
