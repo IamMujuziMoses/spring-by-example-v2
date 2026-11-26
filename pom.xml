@@ -142,6 +142,9 @@
         <module>10-spring-ai/ai-application-testing</module>
         <module>10-spring-ai/model-provider-integration</module>
 
+        <!--    11 GraalVM Native      -->
+        <module>11-graalvm-native/native-executable</module>
+
     </modules>
 
     <properties>

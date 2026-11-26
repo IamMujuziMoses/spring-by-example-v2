@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: native-executable
+
+server:
+  port: 8090
