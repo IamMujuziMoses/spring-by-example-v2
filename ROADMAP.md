@@ -30,8 +30,8 @@ Examples should be focused enough to understand individually while collectively 
 | 07 - Spring Batch         | [x] Completed  |
 | 08 - Spring Integration   | [x] Completed  |
 | 09 - Spring Cloud         | [x] Completed  |
-| 10 - Spring AI            | 🚧 In Progress |
-| 11 - GraalVM Native       | ⬜ Planned      |
+| 10 - Spring AI            | [x] Completed  |
+| 11 - GraalVM Native       | 🚧 In Progress |
 | 12 - Kotlin               | ⬜ Planned      |
 
 ---
