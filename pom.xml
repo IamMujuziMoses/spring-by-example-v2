@@ -146,6 +146,7 @@
         <module>11-graalvm-native/native-executable</module>
         <module>11-graalvm-native/spring-aot</module>
         <module>11-graalvm-native/native-image-constraints</module>
+        <module>11-graalvm-native/reflection</module>
 
     </modules>
 
