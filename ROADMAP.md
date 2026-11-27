@@ -244,9 +244,9 @@ Planned topics:
 Planned topics:
 
 - [x] Native executables
-- 🚧 Spring AOT
+- [x] Spring AOT
 - 🚧 Native image constraints
-- ⬜ Reflection
+- 🚧 Reflection
 - ⬜ Resource configuration
 - ⬜ Runtime hints
 - ⬜ Build-time processing
