@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: native-image-constraints
+
+server:
+  port: 8092
