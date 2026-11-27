@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-aot
+
+server:
+  port: 8091
