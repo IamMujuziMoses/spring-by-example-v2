@@ -246,9 +246,9 @@ Planned topics:
 - [x] Native executables
 - [x] Spring AOT
 - [x] Native image constraints
-- 🚧 Reflection
+- [x] Reflection
 - 🚧 Resource configuration
-- ⬜ Runtime hints
+- 🚧 Runtime hints
 - ⬜ Build-time processing
 - ⬜ Native testing
 - ⬜ Containerized native applications
